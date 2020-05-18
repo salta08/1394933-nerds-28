@@ -25,7 +25,23 @@
 </header>
 <main>
   <h1>Магазин готовых шаблонов</h1>
-  <form action="" method="get">
+
+  <div>
+  <p>Сортировать:</p>
+    <a href="">по цене</a>
+    <a href="">по типу</a>
+    <a href="">по названию</a><!--Стрелочки-->
+  </div>
+
+
+
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Стоимость</legend>
+      <!--Ползунок-->
+      <label>от<input type="text" value="0"></label>
+      <label>до<input type="text" value="15000"></label>
+    </fieldset>
     <fieldset>
       <legend>Сетка</legend>
       <label><input type="radio" name="adaptive">Адаптированная</label>
@@ -75,6 +91,16 @@
       </a>
     </li>
   </ul>
+
+  <form>
+    <button type="submit" formaction="">1</button>
+    <button type="submit" formaction="">2</button>
+    <button type="submit" formaction="">3</button>
+    <button type="submit" formaction="">Следующая</button>
+  </form>
+
+
+
 </main>
 
 
@@ -104,7 +130,7 @@
         // от 0 (весь мир) до 19.
         zoom: 15
       });
-    }
+    }<!--Сделать еще метку на карте-->
   </script>
 
 
