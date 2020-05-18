@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 
 <body>
@@ -11,7 +13,7 @@
 <header>
   <nav>
     <a>
-      <img src="https://via.placeholder.com/150x100" alt="Логотип"><!--Нужно ли указывать размеры логотипа?  -->
+      <img src="https://via.placeholder.com/150x100" alt="Логотип">
     </a>
     <ul>
       <li><a href=""> Студия</a></li>
@@ -19,7 +21,9 @@
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="">Контакты</a></li>
     </ul>
-    <a href="">Корзина</a>
+    <ul>
+      <li><a href="">Корзина</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -27,12 +31,12 @@
 
 <main>
 
-  <div>
-   <span>Долго, дорого,<br> скрупулезно.</span>
-   <h1>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</h1>
-    <a href="">Узнать больше</a>
+  <section>
+   <p>Долго, дорого,<br> скрупулезно.</p>
+   <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+    <button type="submit" formaction="">Узнать больше</button>
   <img src="https://via.placeholder.com/150x100" alt="Телефоны в слайдере">
-  </div>
+  </section>
 
 
   <h1>Дизайн-студия Нёрдс</h1><!--скрытый заголовок. Может он тут лишний?-->
@@ -62,6 +66,7 @@
 
 
   <section>
+    <h2>О нас</h2><!--Скрытый заголовок-->
     <p>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
     <p>Выполняем заказы на разработку:</p>
@@ -79,9 +84,9 @@
     <p>С 2004 года любим точность во всем:</p>
     <table>
       <tr>
-        <td>146%</td>
-        <td>100%</td>
-        <td>50%</td>
+        <td>146<span>%</span></td>
+        <td>100<span>%</span></td>
+        <td>50<span>%</span></td>
       </tr>
       <tr>
         <td>Уровень самоотдачи</td>
@@ -93,7 +98,7 @@
 
 
   <section>
-    <h4>Партнеры</h4><!--Скрытый заголовок-->
+    <h2>Компании</h2><!--Скрытый заголовок-->
     <ul>
       <li>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -115,16 +120,42 @@
     </ul>
   </section>
 
+</main>
+
+
+<footer>
   <div>Nёrds design studio</div>
   <div>191186,Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</div>
   <div>тел. +7(812)2757575</div>
   <button type="submit" formaction="">Напишите нам</button>
 
+  <!--<area shape="rect" coords="" href="rect.html">-->
 
-</main>
-<footer>
+  <div id="map" style="width: 600px; height: 400px"></div>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init(){
+      // Создание карты.
+      var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [59.938635, 30.323118],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 15
+      });
+    }
+  </script>
+
+
+
+
   <section>
-    <span>Давайте дружить, это выгодно!</span>
+    <p>Давайте дружить, это выгодно!</p>
     <span>Скидка 10% для друзей из социальных сетей.</span>
     <ul>
       <li>
