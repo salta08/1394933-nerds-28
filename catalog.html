@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <title>Каталог товаров</title>
+  <meta charset="utf-8">
+  <title>Каталог товаров</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 <body>
 
@@ -22,7 +25,30 @@
 </header>
 <main>
   <h1>Магазин готовых шаблонов</h1>
-  <form action="" method="get">
+
+
+  <p>Сортировать:</p>
+  <ul>
+    <li>
+    <a href="">по цене</a>
+    </li>
+    <li>
+    <a href="">по типу</a>
+    </li>
+    <li>
+    <a href="">по названию</a><!--Стрелочки-->
+    </li>
+  </ul>
+
+
+
+  <form action="#" method="get">
+    <fieldset>
+      <legend>Стоимость</legend>
+      <!--Ползунок-->
+      <label>от<input type="text" value="0"></label>
+      <label>до<input type="text" value="15000"></label>
+    </fieldset>
     <fieldset>
       <legend>Сетка</legend>
       <label><input type="radio" name="adaptive">Адаптированная</label>
@@ -32,7 +58,7 @@
     <fieldset>
       <legend>Особенности</legend>
       <label><input type="checkbox" name="slider">Слайдер</label>
-      <label><input type="checkbox" name="benefits block">Блок преимуществ</label>
+      <label><input type="checkbox" name="benefits-block">Блок преимуществ</label>
       <label><input type="checkbox" name="news">Новости</label>
       <label><input type="checkbox" name="gallery">Галерея</label>
       <label><input type="checkbox" name="basket">Корзина</label>
@@ -72,12 +98,43 @@
       </a>
     </li>
   </ul>
+
+
+    <ul>
+      <li>
+        <a href="">1</a>
+      </li>
+      <li>
+        <a href="">2</a>
+      </li>
+      <li>
+        <a href="">3</a>
+      </li>
+      <li>
+        <a href="">Следующая</a>
+      </li>
+    </ul>
+
+
+
+
 </main>
 
-
 <footer>
+
   <section>
-    <span>Давайте дружить, это выгодно!</span>
+    <h3>Nёrds design studio</h3>
+    <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+    <p>тел. +7(812)2757575</p>
+    <a href="">Напишите нам</a>
+  </section>
+
+
+
+
+  <section>
+    <h3>Соцсети</h3><!-- будет скрытый заголовок-->
+    <p>Давайте дружить, это выгодно!</p>
     <span>Скидка 10% для друзей из социальных сетей.</span>
     <ul>
       <li>
