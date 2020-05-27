@@ -15,9 +15,30 @@
   --basic-green: #00CA74;
   --extra-green: #00BC6C;
   --dark-green: #00AA62;
-  --light-yellow:#EFC84A;
-  --basic-yellow:#EFC849;
-  --extra-yellow:#EAB534;
-  --dark-yellow:#E5A722;
+  --light-yellow: #EFC84A;
+  --basic-yellow: #EFC849;
+  --extra-yellow: #EAB534;
+  --dark-yellow: #E5A722;
 }
+
+body {
+  min-width: 1178px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: var(--basic-black);
+  background-color: var(--basic-black);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
