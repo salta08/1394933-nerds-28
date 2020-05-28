@@ -40,15 +40,15 @@ img {
   height: auto;
 }
 
-.nav-link {
+
+
+
+.nav-items-main, .nav-items-basket {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
-}
-
-.nav-items-main, .nav-items-basket {
   list-style: none;
 }
 
@@ -157,8 +157,6 @@ img {
 .button-red {
   width: 160px;
   height: 50px;
-  left: 140px;
-  top: 922px;
   padding: 17px 40px 15px 39px;
   border-radius: 3px;
   background: var(--basic-red);
@@ -170,11 +168,21 @@ img {
   color: var(--basic-white);
 }
 
+.button-red a:hover,
+.button-red a:focus {
+  color: var(--extra-red);
+}
+
+.button-red a:active {
+  color: var(--dark-red);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+
 .button-green {
   width: 160px;
   height: 50px;
-  left: 140px;
-  top: 922px;
   padding: 17px 40px 15px 39px;
   border-radius: 3px;
   background: var(--basic-green);
@@ -186,11 +194,21 @@ img {
   color: var(--basic-white);
 }
 
+.button-green a:hover,
+.button-green a:focus {
+  color: var(--extra-green);
+}
+
+.button-green a:active {
+  color: var(--dark-green);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+
 .button-yellow {
   width: 160px;
   height: 50px;
-  left: 140px;
-  top: 922px;
   padding: 17px 40px 15px 39px;
   border-radius: 3px;
   background: var(--basic-yellow);
@@ -200,4 +218,15 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
+}
+
+.button-yellow a:hover,
+.button-yellow a:focus {
+  color: var(--extra-yellow);
+}
+
+.button-yellow a:active {
+  color: var(--dark-yellow);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
