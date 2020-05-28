@@ -26,10 +26,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-style: normal;
   color: var(--basic-black);
-  background-color: var(--basic-black);
-
+  background-color: var(--basic-white);
 }
 
 a {
@@ -41,4 +40,120 @@ img {
   height: auto;
 }
 
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
 
+.nav-items-main, .nav-items-basket {
+  list-style: none;
+}
+
+.nav-items-main-current a:not([href]) {
+  background-color: var(--pale-grey);
+}
+
+.nav-items-main a,
+.nav-items-basket a {
+  color: var(--basic-black);
+}
+
+.nav-items-main a:hover,
+.nav-items-main a:focus,
+.nav-items-basket a:hover,
+.nav-items-basket a:focus {
+  color: var(--basic-red);
+}
+
+.nav-items-main a:active,
+.nav-items-basket a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/*состояние активный, находимся на странице
+.nav-list-main a:
+.nav-list-basket a:{
+text-decoration: underline;
+}
+  */
+
+.visually-hidden {
+  display: none;
+}
+
+.service {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-black);
+}
+
+/* Заказать*/
+
+.desc {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.principles {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-black);
+}
+
+.features {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--light-black);
+}
+
+.feature-items {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-black);
+  list-style: none;
+}
+
+.advantages {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.figures {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.percent {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.indicators {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--light-black);
+}
