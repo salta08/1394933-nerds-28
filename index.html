@@ -11,19 +11,19 @@
 <body>
 
 <header>
-  <nav class="nav">
-    <a>
+  <nav class="nav background">
+    <a class="logo" href="index.html">
       <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
     <ul class="nav-items-main">
-      <li><a href="#"> Студия</a></li>
-      <li><a href="#">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li class="nav-item"><a href=""> Студия</a></li>
+      <li class="nav-item"><a href="">Клиенты</a></li>
+      <li class="nav-item"><a href="catalog.html">Магазин</a></li>
+      <li class="nav-item"><a href="">Контакты</a></li>
     </ul>
     <img src="" alt="Иконка корзины">
     <ul class="nav-items-basket">
-      <li><a href="#">Корзина</a></li>
+      <li class="nav-item"><a href="">Корзина</a></li>
     </ul>
   </nav>
 </header>
@@ -122,7 +122,7 @@
 
   <section>
     <h2 class="visually-hidden">Компании</h2>
-    <ul>
+    <ul class="pic-logo">
       <li>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/index/logo-html-academy.png" width="199" height="68" alt="Логотип html academy">
@@ -184,24 +184,31 @@
 
 
 
-  <section>
+  <section class="footer-social">
     <h2 class="visually-hidden">Соцсети</h2>
-    <p>Давайте дружить, это выгодно!</p>
-    <span>Скидка 10% для друзей из социальных сетей.</span>
-    <ul>
+    <p class="social-title">Давайте дружить, это выгодно!</p>
+    <span class="social-text">Скидка 10% для друзей из социальных сетей.</span>
+    <ul class="social-list">
       <li>
-        <a href="">Вконтакте</a>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+          <img src="img/index/vk-icon.svg" alt="Вконтакте">
+        </a>
+      <li>
+      <li>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+          <img src="img/index/fb-icon.svg" alt="Фейсбук">
+        </a>
       </li>
       <li>
-        <a href="">Фейсбук</a>
-      </li>
-      <li>
-        <a href="">Инстаграм</a>
+        <a class="social-button" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+          <img src="img/index/insta-icon.svg" alt="Инстаграм">
+        </a>
       </li>
     </ul>
   </section>
-
-
 </footer>
 </body>
 </html>

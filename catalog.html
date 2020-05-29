@@ -11,57 +11,52 @@
 <body>
 
 <header>
-  <nav>
-    <a href="index.html">
+  <nav class="nav background">
+    <a class="logo" href="index.html">
       <img src="img/catalog/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
     </a>
-    <ul>
-      <li><a href=""> Студия</a></li>
-      <li><a href="">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="">Контакты</a></li>
+    <ul class="nav-items-main">
+      <li class="nav-item"><a href=""> Студия</a></li>
+      <li class="nav-item"><a href="">Клиенты</a></li>
+      <li class="nav-item nav-item-current"><a href="">Магазин</a></li>
+      <li class="nav-item"><a href="">Контакты</a></li>
     </ul>
     <img src="" alt="Иконка корзины">
-    <ul>
-      <li><a href="">Корзина</a></li>
+    <ul class="nav-items-basket">
+      <li class="nav-item"><a href="">Корзина</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <h1>Магазин готовых шаблонов</h1>
+  <h1 class="catalog-title">Магазин готовых шаблонов</h1>
 
 
-  <p>Сортировать:</p>
-  <ul>
+  <p class="sort">Сортировать:</p>
+  <ul class="sort-items">
     <li>
-    <a href="">по цене</a>
+      <a href="">по цене</a>
     </li>
     <li>
-    <a href="">по типу</a>
+      <a href="">по типу</a>
     </li>
     <li>
-    <a href="">по названию</a>
+      <a href="">по названию</a>
     </li>
   </ul>
 
-  <form action="https://echo.htmlacademy.ru" method="get">
+
+
+
+  <form class="filter" action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
       <legend>Стоимость</legend>
       <label><input type="range" min="0" max="15000" step=""></label>
-      <label>от<input type="number" value="0"></label>
-      <label>до<input type="number" value="15000"></label>
+      <label class="min">от<input class="cost-min" type="number" value="0"></label>
+      <label class="max">до<input class="cost-max" type="number" value="15000"></label>
     </fieldset>
 
-    <!--<p>
-    <label for="form-number1">от</label>
-    <input id="form-number1" type="number" name="number" placeholder="0">
-    </p>
-    <p>
-    <label for="form-number2">до</label>
-    <input id="form-number2" type="number" name="number" placeholder="15000">
-    </p>
-        <fieldset>-->
+
     <fieldset>
       <legend>Сетка</legend>
       <ul>
