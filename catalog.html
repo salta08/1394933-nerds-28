@@ -61,15 +61,15 @@
       <legend>Сетка</legend>
       <ul>
         <li>
-          <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+          <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
         </li>
         <li>
-          <input type="radio" name="grid" value="fixed" id="filter-fixed">
+          <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
           <label for="filter-fixed">Фиксированная</label>
         </li>
         <li>
-          <input type="radio" name="grid" value="flex" id="filter-flex">
+          <input class="filter-input-radio" type="radio" name="grid" value="flex" id="filter-flex">
           <label for="filter-flex">Резиновая</label>
         </li>
       </ul>
@@ -78,67 +78,70 @@
       <legend>Особенности</legend>
       <ul>
         <li>
-        <input type="checkbox" name="slider" id="filter-slider" checked>
+        <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
         <label for="filter-slider">Слайдер</label>
         </li>
         <li>
-          <input type="checkbox" name="benefits-blocks" id="filter-benefits-blocks">
+          <input class="filter-input-checkbox" type="checkbox" name="benefits-blocks" id="filter-benefits-blocks">
           <label for="filter-benefits-blocks">Блок преимуществ</label>
         </li>
         <li>
-          <input type="checkbox" name="news" id="filter-news" checked>
+          <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
           <label for="filter-news">Новости</label>
         </li>
         <li>
-          <input type="checkbox" name="gallery" id="filter-gallery">
+          <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
           <label for="filter-gallery">Галерея</label>
         </li>
         <li>
-          <input type="checkbox" name="basket" id="filter-basket">
+          <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
           <label for="filter-basket">Корзина</label>
         </li>
       </ul>
     </fieldset>
-    <button type="submit">Показать</button>
+    <button class="show" type="submit">Показать</button>
   </form>
 
   <section>
   <h2 class="visually-hidden">Товары</h2>
-  <ul>
-    <li>
+  <ul class="catalog-items">
+    <li class="catalog-item">
+        <img class="catalog-item-browser" src="img/catalog/browser.svg" width="360" height="40" alt="Browser">
+        <img class="catalog-item-img" src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
+      <div class="catalog-item-info">
+        <a class="catalog-item-title" href="#"><h3>Sedona</h3></a>
+        <p class="catalog-item-desc">Информационный сайт для туристов</p>
+        <a class="catalog-item-button" href="#" aria-label="Купить за 9900 р">9900 &#8381;</a>
+      </div>
+    </li>
+    <li class="catalog-item">
       <a href="">
-        <img src="img/catalog/browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-sedona.jpg" width="360" height="576" alt="Sedona">
+        <img class="catalog-item-browser" src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
+        <img class="catalog-item-img" src="img/catalog/img-pink.jpg" width="358" height="576" alt="Pink">
       </a>
     </li>
-    <li>
+    <li class="catalog-item">
       <a href="">
-        <img src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-pink.jpg" width="358" height="576" alt="Pink">
+        <img class="catalog-item-browser" src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
+        <img  class="catalog-item-img" src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Barbershop Borodinski">
       </a>
     </li>
-    <li>
+    <li class="catalog-item">
       <a href="">
-        <img src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Barbershop Borodinski">
+        <img class="catalog-item-browser" src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
+        <img class="catalog-item-img" src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Mishka">
       </a>
     </li>
-    <li>
+    <li class="catalog-item">
       <a href="">
-        <img src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-mishka.jpg" width="358" height="578" alt="Mishka">
+        <img class="catalog-item-browser" src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
+        <img class="catalog-item-img" src="img/catalog/img-aplus.jpg" width="358" height="578" alt="Aplus">
       </a>
     </li>
-    <li>
+    <li class="catalog-item">
       <a href="">
-        <img src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-aplus.jpg" width="358" height="578" alt="Aplus">
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <img src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
-        <img src="img/catalog/img-kvast.jpg" width="358" height="578" alt="Кваст">
+        <img class="catalog-item-browser" src="img/catalog/hidden-browser.svg" width="360" height="40" alt="Browser">
+        <img class="catalog-item-img" src="img/catalog/img-kvast.jpg" width="358" height="578" alt="Кваст">
       </a>
     </li>
   </ul>
