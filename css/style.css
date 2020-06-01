@@ -293,6 +293,41 @@ img {
   opacity: 0.1;
 }
 
+/* map */
+.footer-contacts {
+  width: 319px;
+  height: 308px;
+  left: 140px;
+  top: 1897px;
+  background: var(--basic-white);
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-address,
+.footer-tel {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--light-grey);
+}
+
+
+.write {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  padding: 17px 44px 15px 44px;
+  background: var(--basic-red);
+  border-radius: 3px;
+}
 
 
 /* Social button */
