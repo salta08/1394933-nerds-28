@@ -435,14 +435,23 @@ background-color: var(--pale-grey);
   opacity: 0;
 }
 
+.runner {
+  width: 260px;
+  height: 80px;
+  background-color: var(--pale-grey);
+  border-radius: 3px;
+  color: var(--basic-green);
+}
+
 .cost-min,
 .cost-max {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color:var(--light-black);
-  background-color: var(--pale-grey);
+  width: 80px;
+  height: 38px;
+  left: 172px;
+  top: 582px;
+  background: var(--pale-grey);
+  border-radius: 3px;
+  text-align: center;
 }
 
 .min,
@@ -452,6 +461,7 @@ background-color: var(--pale-grey);
   line-height: 22px;
   text-transform: uppercase;
   color: var(--light-black);
+
 }
 
 /* Filters */
