@@ -5,6 +5,7 @@
   --basic-red: #FB565A;
   --extra-red: #E74246;
   --dark-red: #D7373B;
+  --white-grey:#DBDBDB;
   --pale-grey: #EEEEEE;
   --light-grey: #666666;
   --grey: #E1E1E1;
@@ -20,6 +21,7 @@
   --basic-yellow: #EFC849;
   --extra-yellow: #EAB534;
   --dark-yellow: #E5A722;
+
 }
 
 body {
@@ -530,7 +532,9 @@ background-color: var(--pale-grey);
   opacity: 0.3;
 }
 
-
+.catalog-item {
+  list-style: none;
+}
 
 .catalog-item-title h3 {
   font-weight: bold;
@@ -594,3 +598,48 @@ background-color: var(--pale-grey);
 .catalog-item-browser:focus {
   opacity: 0.12;
 }
+
+
+/* pagination */
+
+.pagination-items  {
+  list-style: none;
+}
+
+
+
+.pagination-item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background: var(--pale-grey);
+  border-radius: 3px;
+}
+
+.pagination-item-next a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background: var(--pale-grey);
+  border-radius: 3px;
+  padding: 15px 77px 17px 78px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item-next a:hover,
+.pagination-item-next a:focus {
+  background: var(--middle-grey);
+}
+
+.pagination-item a:active,
+.pagination-item-next a:active {
+  background: var(--extra-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
+}
+
+/* активный пункт */
