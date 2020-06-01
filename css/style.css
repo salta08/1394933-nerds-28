@@ -402,16 +402,38 @@ background-color: var(--pale-grey);
 
 .sort-items {
   list-style: none;
+}
+
+.sort-item {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
+.sort-item:hover,
+.sort-item:focus {
+  opacity: 0.6;
+}
 
+.sort-item:active {
+  opacity: 0;
+}
 
+.down, .up {
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
 
+.down:hover,
+.down:focus,
+.up:hover,
+.up:focus {
+  opacity: 0;
+}
 
 .cost-min,
 .cost-max {
