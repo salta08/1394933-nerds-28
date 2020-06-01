@@ -80,8 +80,45 @@ img {
   opacity: 0.3;
 }
 
+/* slaider */
 
+.slogan{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
 
+.slogan-text{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-black);
+}
+
+.learn-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--basic-white);
+  padding: 17px 54px 15px 54px;
+  background: var(--basic-red);
+  border-radius: 3px;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+  background: var(--extra-red);
+}
+
+.learn-more:active {
+  background: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
+}
 
 .visually-hidden {
   display: none;
