@@ -35,15 +35,18 @@
   <p class="sort">Сортировать:</p>
   <ul class="sort-items">
     <li>
-      <a href="">по цене</a>
+      <a class="sort-item" href="">по цене</a>
     </li>
     <li>
-      <a href="">по типу</a>
+      <a class="sort-item" href="">по типу</a>
     </li>
     <li>
-      <a href="">по названию</a>
+      <a class="sort-item" href="">по названию</a>
     </li>
   </ul>
+  <img  class="down" src="img/catalog/icon-down-pointer.svg" alt="Вниз">
+  <img class="up" src="img/catalog/icon-up-pointer.svg" alt="Вверх">
+
 
 
 
@@ -51,7 +54,7 @@
   <form class="filter" action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
       <legend>Стоимость</legend>
-      <label><input type="range" min="0" max="15000" step=""></label>
+      <label><input class="runner" type="range" min="0" max="15000" step=""></label>
       <label class="min">от<input class="cost-min" type="number" value="0"></label>
       <label class="max">до<input class="cost-max" type="number" value="15000"></label>
     </fieldset>
@@ -99,7 +102,7 @@
         </li>
       </ul>
     </fieldset>
-    <button class="show" type="submit">Показать</button>
+      <button class="show" type="submit">Показать</button>
   </form>
 
   <section>
@@ -162,18 +165,18 @@
   </ul>
   </section>
 
-    <ul>
-      <li>
-        <a href="">1</a>
+    <ul class="pagination-items">
+      <li class="pagination-item">
+        <a aria-label="Первая страница каталога">1</a>
       </li>
-      <li>
-        <a href="">2</a>
+      <li class="pagination-item">
+        <a href="" aria-label="Вторая страница каталога">2</a>
       </li>
-      <li>
-        <a href="">3</a>
+      <li class="pagination-item">
+        <a href="" aria-label="Третья страница каталога" >3</a>
       </li>
-      <li>
-        <a href="">Следующая</a>
+      <li class="pagination-item-next">
+        <a href="" aria-label="Переход на следующую страницу">Следующая</a>
       </li>
     </ul>
 
@@ -183,13 +186,13 @@
 </main>
 
 <footer>
-  <img src="img/index/map.png" width="1440" height="416" alt="Карта проезда">
-  <img src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
-  <section>
-    <h3>Nёrds design studio</h3>
-    <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-    <p>тел. +7(812)2757575</p>
-    <a href="">Напишите нам</a>
+  <img src="img/catalog/map.png" width="1440" height="416" alt="Карта проезда">
+  <img src="img/catalog/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+  <section class="footer-contacts">
+    <h3 class="footer-title">Nёrds design studio</h3>
+    <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+    <p class="footer-tel">тел. +7(812)2757575</p>
+    <a class="write" href="">Напишите нам</a>
   </section>
 
   <section>
@@ -223,19 +226,19 @@
     <li>
       <a class="social-button" href="#">
         <span class="visually-hidden">Вконтакте</span>
-        <img src="img/index/vk-icon.svg" alt="Вконтакте">
+        <img src="img/catalog/vk-icon.svg" alt="Вконтакте">
       </a>
     <li>
     <li>
       <a class="social-button" href="#">
         <span class="visually-hidden">Фейсбук</span>
-        <img src="img/index/fb-icon.svg" alt="Фейсбук">
+        <img src="img/catalog/fb-icon.svg" alt="Фейсбук">
       </a>
     </li>
     <li>
       <a class="social-button" href="#">
         <span class="visually-hidden">Инстаграм</span>
-        <img src="img/index/insta-icon.svg" alt="Инстаграм">
+        <img src="img/catalog/insta-icon.svg" alt="Инстаграм">
       </a>
     </li>
   </ul>
