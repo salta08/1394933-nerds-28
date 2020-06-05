@@ -704,10 +704,18 @@ background-color: var(--pale-grey);
 
 /* servises */
 .services {
+  margin-bottom: 39px;
+  margin-top: 80px;
+
   outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 .service-items {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
 }
 
 
