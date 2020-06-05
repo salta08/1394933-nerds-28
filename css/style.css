@@ -703,11 +703,10 @@ background-color: var(--pale-grey);
 }
 
 /* servises */
+
 .services {
   margin-bottom: 39px;
   margin-top: 80px;
-
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
 }
 .service-items {
   list-style: none;
@@ -718,17 +717,28 @@ background-color: var(--pale-grey);
   column-gap: 100px;
 }
 
+.service-text {
+  margin-bottom: 32px;
+}
 
-.service-item {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
+.service {
+  margin-top: 25px;
+  margin-bottom: 16px;
 }
 
 
+/* footer */
+.footer-social {
+  display: flex;
+flex-direction: row-reverse;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
 
-
-
-
+.social-list {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
 
 
 
