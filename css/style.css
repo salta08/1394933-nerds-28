@@ -46,13 +46,16 @@ img {
 
 
 
-.nav-items-main, .nav-items-basket {
+.main-nav-items, .nav-items-basket {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
   list-style: none;
+
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .nav-item-current a:not([href]) {
@@ -643,3 +646,37 @@ background-color: var(--pale-grey);
 }
 
 /* активный пункт */
+
+
+/* grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 77px;
+
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+/* logo */
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-nav-items, .nav-items-basket {
+
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
