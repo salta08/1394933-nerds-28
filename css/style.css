@@ -53,9 +53,6 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   list-style: none;
-
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .nav-item-current a:not([href]) {
@@ -663,23 +660,15 @@ background-color: var(--pale-grey);
 
 .main-header {
   margin-bottom: 77px;
-
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 /* logo */
 
 .main-header-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+  width: 160px;
+  height: 65px;
 }
 
-.main-nav-items, .nav-items-basket {
-
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
-}
 
 
 /* main-navigation */
@@ -699,9 +688,44 @@ background-color: var(--pale-grey);
 
 .main-nav-items {
   display: flex;
-  align-items: center;
   justify-content: center;
+  width: 797px;
+  margin: 0;
+  padding: 0;
 }
+
+.nav-items-basket {
+  max-width: 200px;
+}
+
+.nav-items-basket, .nav-item {
+  padding-left: 25px;
+}
+
+/* servises */
+.services {
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+.service-items {
+  list-style: none;
+}
+
+
+.service-item {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
