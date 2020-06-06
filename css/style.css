@@ -334,7 +334,7 @@ img {
 
 /* Social button */
 
-.social-list {
+.social-items {
   list-style: none;
 }
 
@@ -705,6 +705,7 @@ background-color: var(--pale-grey);
 /* servises */
 
 .services {
+  width: 1157px;
   margin-bottom: 39px;
   margin-top: 80px;
 }
@@ -728,19 +729,25 @@ background-color: var(--pale-grey);
 
 
 /* footer */
-.footer-social {
-  display: flex;
-flex-direction: row-reverse;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+.footer-social  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 140px;
+  padding: 68px 0;
+  width: 1440px;
 }
 
 .social-list {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
+  margin: 0;
+  margin-left: 140px;
+  width: 261px;
 }
 
-
+.social {
+  margin: 0;
+  margin-right: 240px;
+  width: 660px;
+}
 
 
 
