@@ -61,7 +61,6 @@ img {
 
 .nav-item-current {
   width: 74px;
-  border-bottom: 2px solid var(--basic-red);
 
 }
 .main-nav-items a,
@@ -383,10 +382,7 @@ background-color: var(--basic-black);
   background-color: var(--light-grafit);
 }
 
-/* background
-.background {
-background-color: var(--pale-grey);
-} */
+
 
 .catalog-title {
   font-weight: 500;
@@ -537,6 +533,15 @@ background-color: var(--pale-grey);
 .catalog-item {
   list-style: none;
 }
+.catalog-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--pale-grey);
+  width: 360px;
+  min-height: 231px;
+}
 
 .catalog-item-title h3 {
   font-weight: bold;
@@ -544,6 +549,8 @@ background-color: var(--pale-grey);
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top: 26px;
+
 }
 
 .catalog-item-title h3:hover,
@@ -569,6 +576,8 @@ background-color: var(--pale-grey);
   font-size: 16px;
   line-height: 18px;
   color: var(--light-grey);
+  margin-top: 12px;
+  margin-bottom: 32px;
 }
 
 .catalog-item-button {
@@ -583,6 +592,9 @@ background-color: var(--pale-grey);
   padding: 17px 72px 15px 72px;
   background: var(--basic-red);
   border-radius: 3px;
+  margin-bottom: 44px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .catalog-item-button a:hover,
@@ -660,9 +672,6 @@ background-color: var(--pale-grey);
   align-content: start;
 }
 
-.main-header {
-
-}
 
 /* logo */
 
@@ -705,12 +714,14 @@ background-color: var(--pale-grey);
   max-width: 200px;
 }
 
- .nav-basket {
+.nav-basket {
   padding-left: 25px;
 }
- .nav-item {
-   padding-right: 44px;
- }
+.nav-item {
+  padding-right: 44px;
+}
+
+
 
 /* servises */
 
@@ -766,29 +777,21 @@ background-color: var(--pale-grey);
 /* filter catalog */
 .page-catalog {
   display: flex;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 255, 0, 0.7);
 }
 
 .sort-list {
   padding: 0;
   margin: 0;
   margin-left: 140px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .filter {
   padding: 0;
   margin: 0;
   width: 260px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
 }
 
 .products {
-  outline-offset: -5px;
-  outline: 5px solid rgba(0, 0, 255, 0.7);
   width: 760px;
   padding: 0;
   margin: 0;
@@ -812,9 +815,6 @@ background-color: var(--pale-grey);
   margin-right: 0;
 }
 
-.catalog-item-info {
-
-}
 
 
 .catalog-title {
@@ -864,3 +864,6 @@ background-color: var(--pale-grey);
 .filter fieldset:nth-child(2n) {
   margin-bottom: 46px;
 }
+
+
+
