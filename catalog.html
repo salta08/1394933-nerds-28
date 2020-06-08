@@ -23,35 +23,15 @@
       <li class="nav-item"><a href="">Контакты</a></li>
     </ul>
     <ul class="nav-items-basket">
-      <li class="nav-item"><a class="basket" href="">Корзина</a></li>
+      <li class="nav-basket"><a class="basket" href="">Корзина</a></li>
     </ul>
     </div>
   </nav>
 </header>
 
-<main>
-  <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+<h1 class="catalog-title">Магазин готовых шаблонов</h1>
 
-
-  <p class="sort">Сортировать:</p>
-  <ul class="sort-items">
-    <li>
-      <a class="sort-item" href="">по цене</a>
-    </li>
-    <li>
-      <a class="sort-item" href="">по типу</a>
-    </li>
-    <li>
-      <a class="sort-item" href="">по названию</a>
-    </li>
-  </ul>
-  <img  class="down" src="img/catalog/icon-down-pointer.svg" alt="Вниз">
-  <img class="up" src="img/catalog/icon-up-pointer.svg" alt="Вверх">
-
-
-
-
-
+<main class="page-catalog">
   <form class="filter" action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
       <legend>Стоимость</legend>
@@ -60,10 +40,9 @@
       <label class="max">до<input class="cost-max" type="number" value="15000"></label>
     </fieldset>
 
-
     <fieldset>
       <legend>Сетка</legend>
-      <ul>
+      <ul class="grid">
         <li>
           <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
@@ -78,6 +57,7 @@
         </li>
       </ul>
     </fieldset>
+
     <fieldset>
       <legend>Особенности</legend>
       <ul>
@@ -106,7 +86,28 @@
       <button class="show" type="submit">Показать</button>
   </form>
 
-  <section>
+<div class="cont">
+  <section class="sort-list">
+    <p class="sort">Сортировать:</p>
+    <ul class="sort-items">
+      <li>
+        <a class="sort-item" href="">по цене</a>
+      </li>
+      <li>
+        <a class="sort-item" href="">по типу</a>
+      </li>
+      <li>
+        <a class="sort-item" href="">по названию</a>
+      </li>
+    </ul>
+    <img  class="down" src="img/catalog/icon-down-pointer.svg" alt="Вниз">
+    <img class="up" src="img/catalog/icon-up-pointer.svg" alt="Вверх">
+  </section>
+
+
+
+
+  <section class="products">
   <h2 class="visually-hidden">Товары</h2>
   <ul class="catalog-items">
     <li class="catalog-item">
@@ -164,7 +165,6 @@
       </div>
     </li>
   </ul>
-  </section>
 
     <ul class="pagination-items">
       <li class="pagination-item">
@@ -180,8 +180,8 @@
         <a href="" aria-label="Переход на следующую страницу">Следующая</a>
       </li>
     </ul>
-
-
+  </section>
+</div>
 
 
 </main>

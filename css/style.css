@@ -361,6 +361,7 @@ img {
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
+  margin-bottom: 10px;
 }
 
 .social-text {
@@ -659,7 +660,7 @@ background-color: var(--pale-grey);
 }
 
 .main-header {
-  margin-bottom: 77px;
+
 }
 
 /* logo */
@@ -667,6 +668,8 @@ background-color: var(--pale-grey);
 .main-header-logo {
   width: 160px;
   height: 65px;
+  margin: 0;
+  margin-top: 49px;
 }
 
 
@@ -684,12 +687,15 @@ background-color: var(--pale-grey);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 75px;
+  margin-left: 202px;
+  margin-bottom: 9px;
 }
 
 .main-nav-items {
   display: flex;
   justify-content: center;
-  width: 797px;
+  width: 438px;
   margin: 0;
   padding: 0;
 }
@@ -698,9 +704,12 @@ background-color: var(--pale-grey);
   max-width: 200px;
 }
 
-.nav-items-basket, .nav-item {
+ .nav-basket {
   padding-left: 25px;
 }
+ .nav-item {
+   padding-right: 44px;
+ }
 
 /* servises */
 
@@ -733,24 +742,83 @@ background-color: var(--pale-grey);
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 140px;
-  padding: 68px 0;
-  width: 1440px;
+  width: 1158px;
 }
 
 .social-list {
   margin: 0;
-  margin-left: 140px;
+  margin-top: 68px;
+  margin-bottom: 68px;
   width: 261px;
 }
 
 .social {
   margin: 0;
-  margin-right: 240px;
+  margin-right: 100px;
+  margin-top: 75px;
+  margin-bottom: 74px;
   width: 660px;
+
 }
 
 
+/* filter catalog */
+.page-catalog {
+  display: flex;
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 255, 0, 0.7);
+}
+
+.sort-list {
+  padding: 0;
+  margin: 0;
+  margin-left: 140px;
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.filter {
+  padding: 0;
+  margin: 0;
+  width: 260px;
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+
+.products {
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  width: 757px;
+  padding: 0;
+  margin: 0;
+  margin-left: 140px;
 
 
+}
 
+
+.catalog-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
+  margin-bottom: 163px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sort-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.sort-items {
+  display: flex;
+  flex-direction: row;
+}
 
