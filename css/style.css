@@ -81,19 +81,28 @@ img {
   opacity: 0.3;
 }
 
-/* slaider */
+/* slider */
 
-.slogan{
+.slogan {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  display: flex;
+  width: 538px;
+  min-height: 111px;
 }
+
+
+
 
 .slogan-text{
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--light-black);
+  display: flex;
+  width: 400px;
+  min-heght: 49px;
 }
 
 .learn-more {
@@ -124,6 +133,34 @@ img {
 .visually-hidden {
   display: none;
 }
+
+/* slider */
+
+.slider {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1157px;
+  min-height: 431px;
+}
+
+.slide {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  margin-top: 78px;
+  margin-bottom: 80px;
+
+}
+
+.slider-img {
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+  width: 760px;
+}
+
+
+
 
 .service {
   font-size: 24px;
@@ -659,6 +696,8 @@ background-color: var(--basic-black);
 /* активный пункт */
 
 
+
+
 /* grid */
 
 .page {
@@ -671,6 +710,13 @@ background-color: var(--basic-black);
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
 
 
 /* logo */
@@ -705,7 +751,7 @@ background-color: var(--basic-black);
 .main-nav-items {
   display: flex;
   justify-content: center;
-  width: 438px;
+  width: 450px;
   margin: 0;
   padding: 0;
 }
@@ -717,9 +763,14 @@ background-color: var(--basic-black);
 .nav-basket {
   padding-left: 25px;
 }
+
 .nav-item {
   padding-right: 44px;
 }
+
+
+
+
 
 
 
