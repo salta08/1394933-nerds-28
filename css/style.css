@@ -520,6 +520,7 @@ background-color: var(--pale-grey);
   height: 50px;
   background: var(--pale-grey);
   border-radius: 3px;
+  margin-top: 50px;
 }
 
 .show:hover,
@@ -788,11 +789,30 @@ background-color: var(--pale-grey);
 .products {
   outline-offset: -5px;
   outline: 5px solid rgba(0, 0, 255, 0.7);
-  width: 757px;
+  width: 760px;
   padding: 0;
   margin: 0;
   margin-left: 140px;
+}
 
+.catalog-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.catalog-item {
+  width: 360px;
+  min-height: 400px;
+  margin-right: 40px;
+  margin-bottom:30px;
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item-info {
 
 }
 
@@ -822,3 +842,25 @@ background-color: var(--pale-grey);
   flex-direction: row;
 }
 
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 54px;
+}
+.filter legend {
+  margin-bottom: 13px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  line-height: 19px;
+}
+
+.filter fieldset:nth-child(2n) {
+  margin-bottom: 46px;
+}
