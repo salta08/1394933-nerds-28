@@ -461,14 +461,23 @@ a {
 
 
 
-
-
 .footer-contacts {
   width: 319px;
   height: 308px;
-  left: 140px;
-  top: 1897px;
   background: var(--basic-white);
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: start;
+}
+.footer-contacts p {
+  padding-left: 50px;
+}
+
+.write {
+  margin-left: 50px;
 }
 
 .footer-title {
@@ -497,6 +506,7 @@ a {
   background: var(--basic-red);
   border-radius: 3px;
 }
+
 
 
 /* footer */
