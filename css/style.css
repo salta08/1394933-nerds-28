@@ -38,10 +38,10 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+/*img {*/
+/*  max-width: 100%;*/
+/*  height: auto;*/
+/*}*/
 
 
 
@@ -714,9 +714,8 @@ background-color: var(--basic-black);
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0 10px;
 }
-
 
 
 /* logo */
@@ -732,41 +731,44 @@ background-color: var(--basic-black);
 
 /* main-navigation */
 
-.main-navigation {
+.main-header {
+  width: 1158px;
+  margin-left: 140px;
+}
+
+
+.main-navigation .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.main-navigation-wrapper {
-  width: 100%;
+
+.main-navigation-wrapper  {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
   margin-top: 75px;
-  margin-left: 202px;
-  margin-bottom: 9px;
 }
+
 
 .main-nav-items {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   width: 450px;
-  margin: 0;
-  padding: 0;
+  justify-content: space-between;
 }
 
 .nav-items-basket {
-  max-width: 200px;
+  margin-left: 245px;
+  margin-right: 10px;
 }
 
-.nav-basket {
-  padding-left: 25px;
-}
 
-.nav-item {
-  padding-right: 44px;
-}
+
+
+
+
+
 
 
 
