@@ -56,6 +56,21 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*img {*/
 /*  max-width: 100%;*/
 /*  height: auto;*/
@@ -79,11 +94,19 @@ a {
 
 .nav-item-current {
   width: 74px;
-
 }
+
+.main-nav-items {
+  outline: 5px solid #ff0000;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
 .main-nav-items a,
 .nav-items-basket a {
   color: var(--basic-black);
+  display: block;
 }
 
 .main-nav-items a:hover,
@@ -133,9 +156,25 @@ a {
 
 .nav-items-basket {
   margin-left: 245px;
-  margin-right: 10px;
+  max-width: 115px;
+  outline: 5px solid #ff0000;
 }
 
+.nav-items-basket .basket {
+  position: relative;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/index/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 
 
 /* slaider */
@@ -153,7 +192,7 @@ a {
 }
 
 
-.main-header {
+main-header {
   background-color: #eeeeee;
 
   /* Временно для демонстрации */
@@ -959,7 +998,7 @@ background-color: var(--basic-black);
 
 .catalog-item {
   width: 360px;
-  min-height: 400px;
+  min-height: 620px;
   margin-right: 40px;
   margin-bottom:30px;
 }
