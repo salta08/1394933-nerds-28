@@ -121,13 +121,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-/* активный,  находимся на странице
- .main-nav-items a:,
-.nav-items-basket a: {
-border-bottom: 5px solid red;
-text-decoration: underline;
-text-decoration-color: #da5530;
-  } */
+.main-nav-items a:active link,
+.nav-items-basket a:active link {
+  border-bottom: 2px solid;
+  border-color: var(--basic-red);
+}
+
 
 
 
@@ -645,10 +644,19 @@ main-header {
 
 .social-items {
   list-style: none;
+  display: flex;
+
 }
 
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 81px;
+  height: 81px;
+  margin-right: 10px; /* у инсты отступа нет убрать надо */
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--basic-white);
 }
 
@@ -698,7 +706,7 @@ main-header {
 
 .social {
   margin: 0;
-  margin-right: 100px;
+  argin-right: 100px;
   margin-top: 75px;
   margin-bottom: 74px;
   width: 660px;
