@@ -97,7 +97,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav-items {
-  outline: 5px solid #ff0000;
   display: flex;
   flex-wrap: wrap;
 }
@@ -121,6 +120,17 @@ input[type="radio"].visually-hidden {
   color: var(--basic-black);
   opacity: 0.3;
 }
+
+/* активный,  находимся на странице
+ .main-nav-items a:,
+.nav-items-basket a: {
+border-bottom: 5px solid red;
+text-decoration: underline;
+text-decoration-color: #da5530;
+  } */
+
+
+
 
 /* main-navigation grid */
 .main-header-logo {
@@ -157,7 +167,6 @@ input[type="radio"].visually-hidden {
 .nav-items-basket {
   margin-left: 245px;
   max-width: 115px;
-  outline: 5px solid #ff0000;
 }
 
 .nav-items-basket .basket {
@@ -370,18 +379,21 @@ main-header {
   color: var(--light-black);
 }
 
-.button-red {
+.button-service {
   width: 160px;
   height: 50px;
   padding: 17px 40px 15px 39px;
   border-radius: 3px;
-  background: var(--basic-red);
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
+}
+
+.button-red {
+  background: var(--basic-red);
 }
 
 .button-red a:hover,
@@ -397,17 +409,7 @@ main-header {
 
 
 .button-green {
-  width: 160px;
-  height: 50px;
-  padding: 17px 40px 15px 39px;
-  border-radius: 3px;
   background: var(--basic-green);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--basic-white);
 }
 
 .button-green a:hover,
@@ -423,17 +425,7 @@ main-header {
 
 
 .button-yellow {
-  width: 160px;
-  height: 50px;
-  padding: 17px 40px 15px 39px;
-  border-radius: 3px;
   background: var(--basic-yellow);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--basic-white);
 }
 
 .button-yellow a:hover,
@@ -451,7 +443,7 @@ main-header {
 
 .services {
   width: 1157px;
-  margin-bottom: 39px;
+  margin-bottom: 80px;
   margin-top: 80px;
 }
 
