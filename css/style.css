@@ -218,6 +218,8 @@ main-header {
 .slider {
   position: relative;
   background-color: var(--pale-grey);
+  min-height: 431px;
+  margin-top: 0;
 }
 
 
@@ -451,7 +453,7 @@ main-header {
 .services {
   width: 1157px;
   margin-bottom: 82px;
-  margin-top: 80px;
+  margin-top: 74px;
 }
 
 .service-items {
@@ -672,17 +674,22 @@ main-header {
   border-radius: 50%;
   width: 81px;
   height: 81px;
-  margin-right: 10px; /* у инсты отступа нет убрать надо */
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), var(--basic-white);
+  margin-right: 10px;
+  background: linear-gradient(0deg, var(--grey), var(--grey)), var(--basic-white);
 }
+
+.social-items:last-child {
+  margin-right: 0;
+}
+
 
 .social-button:hover,
 .social-button:focus {
-  background: linear-gradient(0deg, #E74246, #E74246), var(--basic-white);
+  background: linear-gradient(0deg, var(--extra-red), var(--extra-red)), var(--basic-white);
 }
 
 .social-button:active {
-  background: linear-gradient(0deg, #D7373B, #D7373B), var(--basic-white);
+  background: linear-gradient(0deg, var(--dark-red), var(--dark-red)), var(--basic-white);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   opacity: 0.3;
 }
@@ -695,6 +702,7 @@ main-header {
   line-height: 36px;
   color: var(--basic-black);
   margin-bottom: 10px;
+  margin-top: 17px;
 }
 
 .social-text {
@@ -722,7 +730,7 @@ main-header {
 
 .social {
   margin: 0;
-  argin-right: 100px;
+  margin-right: 57px;
   margin-top: 75px;
   margin-bottom: 74px;
   width: 660px;
