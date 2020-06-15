@@ -96,11 +96,6 @@ input[type="radio"].visually-hidden {
   width: 74px;
 }
 
-.main-nav-items {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 
 .main-nav-items a,
 .nav-items-basket a {
@@ -153,20 +148,32 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   margin-top: 75px;
+  justify-content: center;
 }
 
 
 .main-nav-items {
   display: flex;
   flex-direction: row;
-  width: 450px;
+  flex-wrap: wrap;
+ width: 450px;
   justify-content: space-between;
+  margin-top: 0;
+  margin-right: 245px;
 }
 
 .nav-items-basket {
-  margin-left: 245px;
   max-width: 115px;
+  margin-top: 0;
+  margin-right: -22px;
 }
+
+.main-nav-items .nav-item-1 {
+  margin-left: 10px;
+}
+
+
+
 
 .nav-items-basket .basket {
   position: relative;
@@ -175,14 +182,15 @@ input[type="radio"].visually-hidden {
 .basket::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -25px;
+  top: 7px;
+  left: -41px;
   width: 15px;
   height: 15px;
   background-image: url("../img/index/basket-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 
 
 /* slaider */
@@ -442,7 +450,7 @@ main-header {
 
 .services {
   width: 1157px;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
   margin-top: 80px;
 }
 
@@ -455,12 +463,21 @@ main-header {
   column-gap: 100px;
 }
 
+.service-item-2 {
+  margin-left: -20px;
+}
+
+.service-item-3 {
+  margin-left: -39px;
+}
+
 .service-text {
-  margin-bottom: 32px;
+  margin-bottom: 50px;
+
 }
 
 .service {
-  margin-top: 25px;
+  margin-top: 22px;
   margin-bottom: 16px;
 }
 
@@ -645,7 +662,6 @@ main-header {
 .social-items {
   list-style: none;
   display: flex;
-
 }
 
 
