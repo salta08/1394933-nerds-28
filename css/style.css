@@ -658,6 +658,7 @@ main-header {
 }
 
 
+
 .modal-map {
   display: none;
 }
@@ -671,27 +672,42 @@ main-header {
   margin: auto;
   background-position: 0 0;
   background-repeat: no-repeat;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 
 .modal-description {
+  width: 311px;
+  height: 53px;
   margin-top: 0;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
-  outline: #00AA62 2px solid;
+  margin-bottom: 37px;
 }
 
 
+.modal-feedback {
+  outline: var(--dark-red) 2px solid;
+  top: 120px;
+  bottom: auto;
+  margin-left: 240px;
+  margin-right: 240px;
+  padding: 63px 99px 84px 100px;
+}
+
+
+
 .feedback-form label {
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   outline: #00AA62 2px solid;
-  width: 150px; /* 80px */
+  margin-bottom: 9px;
+  width: 108px;
+  height: 18px;
 }
-
 
 
 .user {
@@ -708,24 +724,41 @@ main-header {
 
 
 
-.modal-feedback {
-  outline: var(--dark-red) 2px solid;
-  top: 120px;
-  bottom: auto;
-  margin-left: 240px;
-  margin-right: 240px;
-  padding: 63px 99px 84px 100px;
+/* modal-close */
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 26px;
+  height: 3px;
+  background: rgba(251, 86, 90, 0.3);
+}
+
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 
 
-. {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 360px;
-  min-height: 77px;
-}
 
 .modal-feedback p {
   display: flex;
@@ -742,9 +775,27 @@ main-header {
 
 .text-user {
   width: 760px;
-  ustify-content: stretch;
   min-height: 118px;
 }
+
+.button-send {
+  width: 259px;
+  height: 50px;
+  background: var(--basic-red);
+  border-radius: 3px;
+margin-top: 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  padding: 17px 83px 15px 83px;
+  border: none;
+}
+
+
+
 
 
 
