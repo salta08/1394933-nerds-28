@@ -56,7 +56,20 @@ a {
   text-decoration: none;
 }
 
+input, textarea {
+  outline:none;
+}
 
+input:hover, textarea:hover {
+  outline:none;
+}
+
+input:focus, textarea:focus {
+  outline:none;
+}
+input:active, textarea:active {
+  outline:none;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -829,30 +842,44 @@ main-header {
 
 
 
-/*
-.user {
+
+.feedback-form input,
+.feedback-form textarea {
   border: 2px solid #D7DCDE;
-  box-sizing: border-box;
   border-radius: 3px;
+  color: #444444;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
 
 
-.user:hover {
+.feedback-form input:hover,
+.feedback-form textarea:hover {
   background: #FFFFFF;
   border: 2px solid #B4B9BB;
-  box-sizing: border-box;
   border-radius: 3px;
+  color: #444444;
+  mix-blend-mode: normal;
+  opacity: 0.5;
 }
 
-.user:focus {
+.feedback-form input:focus,
+.feedback-form textarea:focus {
   background: #FFFFFF;
   border: 2px solid #000000;
-  box-sizing: border-box;
   border-radius: 3px;
+  color: #444444;
 }
 
-*/
+.feedback-form input:invalid,
+.feedback-form textarea:invalid {
+  background: #FFFFFF;
+  border: 2px solid #E74246;
+  border-radius: 3px;
+  color: #E74246;
+}
+
 
 
 
