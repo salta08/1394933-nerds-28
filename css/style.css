@@ -56,6 +56,8 @@ a {
   text-decoration: none;
 }
 
+
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -633,7 +635,6 @@ main-header {
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 49px;
-
 }
 
 .footer-address,
@@ -679,16 +680,15 @@ main-header {
 .modal-description {
   width: 311px;
   height: 53px;
-  margin-top: 0;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
+  margin: 0;
   margin-bottom: 37px;
 }
 
 
 .modal-feedback {
-  outline: var(--dark-red) 2px solid;
   top: 120px;
   bottom: auto;
   margin-left: 240px;
@@ -703,26 +703,40 @@ main-header {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  outline: #00AA62 2px solid;
   margin-bottom: 9px;
   width: 108px;
   height: 18px;
 }
 
 
+
 .user {
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
   color: var(--dark-grey);
   mix-blend-mode: normal;
   opacity: 0.5;
-  outline: #00AA62 2px solid;
-  width: 360px;
-  height: 50px;
+  width: 342px;
+  height: 47px;
+  padding: 0;
+}
+
+.name-user, .email-user {
+  padding-left: 16px;
 }
 
 
+.text-user {
+  padding-left: 16px;
+  padding-top: 16px;
+  margin: 0;
+}
+
+
+
+.feedback-form p:nth-child(3) {
+  margin-top: 34px;
+}
 
 /* modal-close */
 
@@ -735,14 +749,27 @@ main-header {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  opacity: 0.3;
 }
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 0;
+}
+
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
+
 
 .modal-close::before,
 .modal-close::after {
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
+  left: 0;
   width: 26px;
   height: 3px;
   background: rgba(251, 86, 90, 0.3);
@@ -774,8 +801,8 @@ main-header {
 }
 
 .text-user {
-  width: 760px;
-  min-height: 118px;
+  width: 744px;
+  height: 101px;
 }
 
 .button-send {
@@ -783,7 +810,7 @@ main-header {
   height: 50px;
   background: var(--basic-red);
   border-radius: 3px;
-margin-top: 37px;
+  margin-top: 44px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -795,7 +822,37 @@ margin-top: 37px;
 }
 
 
+.feedback-form p {
+  margin: 0;
+}
 
+
+
+
+/*
+.user {
+  border: 2px solid #D7DCDE;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+
+.user:hover {
+  background: #FFFFFF;
+  border: 2px solid #B4B9BB;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.user:focus {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+*/
 
 
 
