@@ -673,11 +673,30 @@ main-header {
   margin-left: 50px;
 }
 
-
+/* modal-map */
 
 .modal-map {
-  display: none;
+  width: 1440px;
+  height: 416px;
+  border: none;
 }
+
+.footer-contacts {
+  position: fixed;
+  width: 319px;
+  height: 308px;
+  top: 230px;
+  left: 140px;
+}
+
+
+
+.modal-map img {
+  display: block;
+}
+
+
+
 
 .modal {
   position: fixed;
@@ -692,6 +711,8 @@ main-header {
 }
 
 
+
+
 .modal-description {
   width: 311px;
   height: 53px;
@@ -704,6 +725,7 @@ main-header {
 
 
 .modal-feedback {
+  display: none;
   top: 120px;
   bottom: auto;
   margin-left: 240px;

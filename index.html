@@ -221,17 +221,34 @@
 
 
   <section class="modal modal-map">
-    <div class="map">
-      <img src="img/index/map.png" width="1440" height="416" alt="Карта проезда">
-    </div>
-    <img src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
+    </script>
+    <div id="map" style="width: 1440px; height: 416px"></div>
+    <script type="text/javascript">
+      ymaps.ready(init);
+
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [59.938632, 30.323279],
+
+          zoom: 18
+        });
+      }
+
+    </script>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <img class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+  </section>
+
+
     <section class="footer-contacts">
       <p class="footer-title">Nёrds design studio</p>
       <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-tel">тел. +7(812)2757575</p>
       <a class="write" href="">Напишите нам</a>
     </section>
-  </section>
+
 
 
 
