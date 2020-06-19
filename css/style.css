@@ -650,7 +650,19 @@ main-header {
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 49px;
+  margin-bottom: 23px;
+
 }
+
+.contacts {
+  min-width: 230px;
+  min-height: 72px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+grid-gap: 5px;
+
+}
+
 
 .footer-address,
 .footer-tel {
@@ -658,7 +670,9 @@ main-header {
   font-size: 16px;
   line-height: 18px;
   color: var(--light-grey);
+  text-align: start;
 }
+
 
 
 .write {
@@ -671,6 +685,8 @@ main-header {
   background: var(--basic-red);
   border-radius: 3px;
   margin-left: 50px;
+  margin-bottom: 47px;
+  margin-top: 37px;
 }
 
 /* modal-map */
