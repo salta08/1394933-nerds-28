@@ -48,7 +48,7 @@ body {
   min-width: 1178px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, "Roboto Slab", serif;
   font-style: normal;
   color: var(--basic-black);
   background-color: var(--basic-white);
@@ -151,8 +151,9 @@ input[type="radio"].visually-hidden {
   margin-top: 49px;
 }
 
-
-
+.main-header {
+  background-color: var(--pale-grey);
+}
 
 .main-navigation .container {
   display: flex;
@@ -226,10 +227,9 @@ input[type="radio"].visually-hidden {
 
 
 main-header {
-  background-color: #eeeeee;
 
   /* Временно для демонстрации */
-  .height: 50px;
+  height: 50px;
 }
 
 .slider {
@@ -237,10 +237,12 @@ main-header {
   background-color: var(--pale-grey);
   min-height: 431px;
   margin-top: 0;
+  padding-right: 143px;
+  padding-left: 140px;
 }
 
 
-
+/*
 .slider-controls {
   position: absolute;
   left: 50%;
@@ -263,6 +265,7 @@ main-header {
   cursor: pointer;
 }
 
+
 .slider-controls label::after {
   content: "";
 
@@ -276,6 +279,9 @@ main-header {
   border-radius: 50%;
 }
 
+*/
+
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -288,7 +294,7 @@ main-header {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("http://dummyimage.com/300x300/a6a6ff");
+  background-image: url("../img/index/slide-first.jpg");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
@@ -468,38 +474,29 @@ main-header {
 /* services grid */
 
 .services {
-  width: 1157px;
-  margin-bottom: 82px;
-  margin-top: 74px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .service-items {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-right: 200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
 }
 
-.service-item-2 {
-  margin-left: -20px;
-}
-
-.service-item-3 {
-  margin-left: -39px;
-}
 
 .service-text {
   margin-bottom: 50px;
-
 }
 
 .service {
   margin-top: 22px;
   margin-bottom: 16px;
 }
-
 
 
 
@@ -636,6 +633,7 @@ main-header {
   flex-direction: column;
   text-align: center;
   align-items: start;
+  display: none;
 }
 
 .footer-contacts p {
@@ -695,6 +693,7 @@ grid-gap: 5px;
   width: 1440px;
   height: 416px;
   border: none;
+  display: none;
 }
 
 .footer-contacts {

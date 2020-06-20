@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -29,13 +30,13 @@
       </div>
     </div>
   </nav>
-
 </header>
 
 
 
 
-<main class="container">
+<main>
+  <div class="container">
   <h1 class="catalog-title">Магазин готовых шаблонов</h1>
   <div class="page-catalog">
   <form class="filter" action="https://echo.htmlacademy.ru" method="get">
@@ -192,47 +193,53 @@
   </section>
 </div>
   </div>
+  </div>
 
-</main>
 
-<footer>
-  <div class="container">
-    <div class="map">
-      <img src="img/index/map.png" width="1440" height="416" alt="Карта проезда">
-    </div>
-    <img src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
-    <section class="footer-contacts">
-      <p class="footer-title">Nёrds design studio</p>
+
+
+
+
+
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
+    </script>
+    <div id="map" style="width: 1440px; height: 416px"></div>
+    <script type="text/javascript">
+      ymaps.ready(init);
+
+      function init() {
+        var myMap = new ymaps.Map("map", {
+          center: [59.938632, 30.323279],
+
+          zoom: 18
+        });
+      }
+
+    </script>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <img class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+  </section>
+
+
+  <section class="footer-contacts">
+    <p class="footer-title">Nёrds design studio</p>
+    <div class="contacts">
       <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-tel">тел. +7(812)2757575</p>
-      <a class="write" href="">Напишите нам</a>
-    </section>
-
-
-
-  <section class="visually-hidden">
-    <h5 class="visually-hidden">Форма обратной связи</h5>
-    <p>Напишите нам</p>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="form-name">Ваше имя:</label>
-        <input id="form-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="form-email">Ваш e-mail:</label>
-        <input id="form-email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="form-text">Текст письма:</label>
-        <input id="form-text" type="text" name="text" placeholder="В свободной форме">
-      </p>
-      <button type="submit">Отправить</button>
-    </form>
-    <button type="button">Закрыть</button>
+    </div>
+    <a class="write" href="">Напишите нам</a>
   </section>
 
 
 
+</main>
+
+
+<footer>
+  <div class="container">
     <div class="footer-social">
       <h2 class="visually-hidden">Соцсети</h2>
       <section class="social-list">
@@ -240,19 +247,27 @@
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg width="26" height="15" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
+              <svg width="26" height="15" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,
+              4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,
+              3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,
+              1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,
+              10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.
+              81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
             </a>
           <li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Фейсбук</span>
-              <svg width="12" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
+              <svg width="12" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.
+              07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
-              <svg width="21" height="21" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
+              <svg width="21" height="21" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.
+              5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.
+              5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
             </a>
           </li>
         </ul>
@@ -264,5 +279,35 @@
     </div>
   </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
+<section class="modal modal-feedback">
+  <h5 class="visually-hidden">Форма обратной связи</h5>
+  <p class="modal-description">Напишите нам</p>
+  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="form-name">Ваше имя:</label>
+      <input class="user name-user" id="form-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="form-email">Ваш email:</label>
+      <input class="user email-user" id="form-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="form-text">Текст письма:</label>
+      <textarea class="user text-user" id="form-text" type="text" name="text" placeholder="В свободной форме"></textarea>
+    </p>
+    <button class="button-send" type="submit">Отправить</button>
+  </form>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+</section>
 </body>
 </html>
