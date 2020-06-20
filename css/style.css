@@ -475,7 +475,8 @@ main-header {
 
 .services {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 92px;
+  border-bottom: 2px solid var(--pale-grey);
 }
 
 .service-items {
