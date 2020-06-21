@@ -509,6 +509,8 @@ main-header {
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .principles {
@@ -516,6 +518,7 @@ main-header {
   font-size: 16px;
   line-height: 24px;
   color: var(--light-black);
+  margin-bottom: 40px;
 }
 
 .features {
@@ -524,6 +527,7 @@ main-header {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--light-black);
+  margin-bottom: 23px;
 }
 
 .feature-items {
@@ -532,7 +536,19 @@ main-header {
   line-height: 24px;
   color: var(--light-black);
   list-style: none;
+  margin-left: -3px;
 }
+
+.class {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.our-advantages {
+  padding-left: 18px;
+}
+
+
 
 .advantages {
   font-style: normal;
@@ -540,18 +556,30 @@ main-header {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: end;
+  margin: 0;
+  margin-right: -7px;
+  margin-top: 33px;
 }
 
 .figures {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
+
+}
+
+
+table {
+  margin: 0;
+  margin-top: 27px;
 }
 
 .percent {
   font-weight: bold;
   font-size: 26px;
   line-height: 40px;
+  padding-right: 19px;
 }
 
 .indicators {
@@ -559,6 +587,7 @@ main-header {
   font-size: 16px;
   line-height: 18px;
   color: var(--light-black);
+  margin: 0;
 }
 
 /* about us grid */
@@ -566,25 +595,32 @@ main-header {
 .company {
   display: grid;
   grid-template-columns: 1fr 360px;
-  width: 1158px;
-  min-height: 525px;
+  border-bottom: 2px solid var(--pale-grey);
+  padding-bottom: 3px;
 }
 
 .about-us {
-  margin-top: 73px;
-  margin-bottom: 73px;
+  margin: 0;
+  padding-top: 73px;
 }
 
 .our-advantages {
-  margin-top: 39px;
-  margin-bottom: 75px;
+  padding-top: 39px;
+  padding-bottom: 75px;
 }
 
 
-.advantages {
-  align-items: center;
-  text-align: center;
+/*
+.feature-items{
+  list-style: none inside;
 }
+.feature-item:before {
+  content: "\2014";
+  margin: 0;
+  margin-right: 7px;
+  color: var(--basic-red);
+}
+*/
 
 
 /* логотипы компаний */
