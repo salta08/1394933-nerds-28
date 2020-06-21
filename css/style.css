@@ -610,17 +610,17 @@ table {
 }
 
 
-/*
+
 .feature-items{
   list-style: none inside;
 }
 .feature-item:before {
-  content: "\2014";
+  content: "\2015";
   margin: 0;
   margin-right: 7px;
   color: var(--basic-red);
 }
-*/
+
 
 
 /* логотипы компаний */
@@ -629,8 +629,8 @@ table {
   list-style: none;
 }
 
-.pic-logo a:link {
-  opacity: 0.2;
+.pic-logo a {
+  opacity: 0.8;
 }
 
 .pic-logo a:hover,
@@ -640,17 +640,21 @@ table {
 }
 
 .pic-logo a:active {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .pic-logo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 1158px;
-  min-height: 180px;
   text-align: center;
   align-content: center;
+  border-top: 2px solid var(--pale-grey);
+  border-bottom: 2px solid var(--pale-grey);
 }
+
+
+
+
 
 
 /* map */
