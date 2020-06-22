@@ -172,9 +172,16 @@
     </section>
   </div>
 
-
+<div class="">
+  <div class="container">
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <img src="img/index/map.png" width="1440" height="416"
+         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <img  class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
     </script>
     <div id="map" style="width: 1440px; height: 416px"></div>
@@ -190,17 +197,20 @@
       }
 
     </script>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    <img class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
-  </section>
 
 
-  <section class="footer-contacts">
-    <p class="footer-title">Nёrds design studio</p>
+
+    <section class="footer-contacts">
+      <p class="footer-title">Nёrds design studio</p>
       <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
       <p class="footer-tel">тел. +7 (812) 275-75-75</p>
-    <a class="button-write" href="">Напишите нам</a>
+      <a class="button-write" href="">Напишите нам</a>
+      </section>
   </section>
+  </div>
+</div>
+
+
 </main>
 
 
@@ -278,8 +288,13 @@
     </p>
     <button class="button-send" type="submit">Отправить</button>
   </form>
-  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <button class="modal-close" type="button" aria-label="Закрыть">
+    <img src="img/index/close-cross.svg" width="21" height="21" alt="Кнопка закрыть">
+  </button>
 </section>
+
+
+
 
 
 </body>

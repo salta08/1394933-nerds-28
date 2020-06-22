@@ -760,7 +760,10 @@ table {
   flex-direction: column;
   text-align: center;
   align-items: start;
-  outline: 2px solid green;
+  position: absolute;
+  z-index: 6;
+  right: 981px;
+  bottom: 54px;
 }
 
 .footer-contacts p {
@@ -814,15 +817,26 @@ table {
   width: 1440px;
   height: 416px;
   border: none;
+  position: absolute;
+  z-index: 2;
   display: none;
 }
 
 
 .modal-map img {
   display: block;
+  position: relative;
+
 }
 
-
+.img-marker {
+  width: 231px;
+  height: 190px;
+  position: absolute;
+  z-index: 6;
+  right: -822px;
+  bottom: 357px;
+}
 
 
 .modal {
@@ -852,7 +866,7 @@ table {
 
 
 .modal-feedback {
-  display: none;
+
   top: 120px;
   bottom: auto;
   margin-left: 240px;
@@ -907,9 +921,7 @@ table {
 .modal-close {
   position: absolute;
   top: 78px;
-  right: 90px;
-  width: 21px;
-  height: 21px;
+  right: 85px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -918,34 +930,12 @@ table {
 
 .modal-close:hover,
 .modal-close:focus {
-  opacity: 0;
+  opacity: 1;
 }
 
 
 .modal-close:active {
   opacity: 0.1;
-}
-
-
-
-.modal-close::before,
-.modal-close::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 26px;
-  height: 3px;
-  background: rgba(251, 86, 90, 0.3);
-}
-
-
-.modal-close::before {
-  transform: rotate(45deg);
-}
-
-.modal-close::after {
-  transform: rotate(-45deg);
 }
 
 
