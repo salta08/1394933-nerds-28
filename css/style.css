@@ -743,6 +743,7 @@ table {
 
 
 /* map */
+
 .map {
   display: flex;
   flex-direction: row;
@@ -759,7 +760,7 @@ table {
   flex-direction: column;
   text-align: center;
   align-items: start;
-  display: none;
+  outline: 2px solid green;
 }
 
 .footer-contacts p {
@@ -774,16 +775,7 @@ table {
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 49px;
-  margin-bottom: 23px;
-
-}
-
-.contacts {
-  min-width: 230px;
-  min-height: 72px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-grid-gap: 5px;
+  margin-bottom: 5px;
 
 }
 
@@ -797,9 +789,13 @@ grid-gap: 5px;
   text-align: start;
 }
 
+.footer-tel {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 37px;
+}
 
-
-.write {
+.button-write {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -809,8 +805,7 @@ grid-gap: 5px;
   background: var(--basic-red);
   border-radius: 3px;
   margin-left: 50px;
-  margin-bottom: 47px;
-  margin-top: 37px;
+
 }
 
 /* modal-map */
@@ -821,15 +816,6 @@ grid-gap: 5px;
   border: none;
   display: none;
 }
-
-.footer-contacts {
-  position: fixed;
-  width: 319px;
-  height: 308px;
-  top: 230px;
-  left: 140px;
-}
-
 
 
 .modal-map img {
