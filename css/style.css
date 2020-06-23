@@ -1280,8 +1280,11 @@ background-color: var(--basic-black);
   padding-top: 19px;
 }
 
+
 .filter-option {
-  margin-bottom: 15px;
+  margin-top: 14px;
+  padding: 0;
+  padding-bottom: 7px;
 }
 
 
@@ -1291,7 +1294,8 @@ background-color: var(--basic-black);
   display: block;
   cursor: pointer;
   user-select: none;
- padding-left: 50px;
+  padding-left: 36px;
+
 }
 
 
