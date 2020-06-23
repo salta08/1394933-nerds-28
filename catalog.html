@@ -34,22 +34,11 @@
 
 
 
-
-
-    <!--
-    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-    <fieldset>
-      <legend>Стоимость:</legend>
-      <label><input class="runner" type="range" min="0" max="15000" step=""></label>
-      <label class="min">от<input class="cost-min" type="number" value="0"></label>
-      <label class="max">до<input class="cost-max" type="number" value="15000"></label>
-    </fieldset>
-    -->
     <main>
     <div class="container">
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       <div class="page-catalog">
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-item">
           <legend>Стоимость:</legend>
           <div class="range-filter">
@@ -70,51 +59,54 @@
             </div>
           </div>
         </fieldset>
+
       <fieldset>
-      <legend>Сетка</legend>
+      <legend>Сетка:</legend>
       <ul class="grid">
-        <li>
-          <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+        <li class="filter-option filter-radio">
+          <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
         </li>
-        <li>
-          <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+        <li class="filter-option filter-radio">
+          <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
           <label for="filter-fixed">Фиксированная</label>
         </li>
-        <li>
-          <input class="filter-input-radio" type="radio" name="grid" value="flex" id="filter-flex">
+        <li class="filter-option filter-radio">
+          <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="flex" id="filter-flex">
           <label for="filter-flex">Резиновая</label>
         </li>
       </ul>
     </fieldset>
 
     <fieldset>
-      <legend>Особенности</legend>
+      <legend>Особенности:</legend>
       <ul>
-        <li>
-        <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+        <li class="filter-option filter-checkbox">
+        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
         <label for="filter-slider">Слайдер</label>
         </li>
-        <li>
-          <input class="filter-input-checkbox" type="checkbox" name="benefits-blocks" id="filter-benefits-blocks">
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="benefits-blocks"
+                 id="filter-benefits-blocks">
           <label for="filter-benefits-blocks">Блок преимуществ</label>
         </li>
-        <li>
-          <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
           <label for="filter-news">Новости</label>
         </li>
-        <li>
-          <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
           <label for="filter-gallery">Галерея</label>
         </li>
-        <li>
-          <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+        <li class="filter-option filter-checkbox">
+          <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
           <label for="filter-basket">Корзина</label>
         </li>
       </ul>
     </fieldset>
-      <button class="show" type="submit">Показать</button>
+      <button class="button-show" type="submit">Показать</button>
   </form>
+
 
 <div class="cont">
   <section class="sort-list">
