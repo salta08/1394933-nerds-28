@@ -1265,6 +1265,7 @@ background-color: var(--basic-black);
   font-style: normal;
 }
 
+
 .filter ul {
   list-style: none;
   font-weight: normal;
@@ -1273,6 +1274,11 @@ background-color: var(--basic-black);
   color: var(--light-black);
 }
 
+.cost {
+  margin:0;
+  padding: 0;
+  padding-top: 19px;
+}
 
 .filter-option {
   margin-bottom: 15px;
@@ -1594,9 +1600,7 @@ background-color: var(--basic-black);
   margin-bottom: 54px;
 }
 
-.filter legend {
-  margin-bottom: 13px;
-}
+
 
 .filter ul {
   padding: 0;
