@@ -23,7 +23,7 @@
   --basic-yellow: #EFC849;
   --extra-yellow: #EAB534;
   --dark-yellow: #E5A722;
-
+  --range-grey: #ABABAB;
 }
 
 .page {
@@ -840,6 +840,7 @@ table {
 
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1106,6 +1107,11 @@ table {
 
 
 
+
+
+
+
+
 /*catalog.html  */
 
 .main-header-logo a:hover,
@@ -1123,8 +1129,110 @@ background-color: var(--basic-black);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 87px;
 }
+
+
+
+/* range */
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  /* Для демонстрации */
+  width: 260px;
+  margin: 50px auto;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--pale-grey);
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--border-grey);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--range-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--light-black);
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--light-black);
+  border: none;
+  border-radius: 3px;
+  background: var(--pale-grey);
+}
+
+
+
+
 
 .sort {
   font-weight: bold;
@@ -1169,36 +1277,12 @@ background-color: var(--basic-black);
   opacity: 0;
 }
 
-.runner {
-  width: 260px;
-  height: 80px;
-  background-color: var(--pale-grey);
-  border-radius: 3px;
-  color: var(--basic-green);
-}
 
-.cost-min,
-.cost-max {
-  width: 80px;
-  height: 38px;
-  left: 172px;
-  top: 582px;
-  background: var(--pale-grey);
-  border-radius: 3px;
-  text-align: center;
-}
 
-.min,
-.max {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  color: var(--light-black);
 
-}
 
 /* Filter catalog*/
+
 
 .filter legend {
   font-weight: bold;
@@ -1394,12 +1478,13 @@ background-color: var(--basic-black);
   margin-right: 0;
 }
 
-.catalog-title {
-  display: flex;
-  justify-content: center;
-  margin-top: 87px;
-  margin-bottom: 163px;
-}
+
+
+
+
+
+
+
 
 .cont {
   display: flex;
@@ -1509,8 +1594,6 @@ background-color: var(--basic-black);
   margin-top: 55px;
   margin-bottom: 60px;
 }
-
-
 
 
 

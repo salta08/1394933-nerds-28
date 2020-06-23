@@ -35,19 +35,42 @@
 
 
 
-<main>
-  <div class="container">
-  <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-  <div class="page-catalog">
-  <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+
+    <!--
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
     <fieldset>
-      <legend>Стоимость</legend>
+      <legend>Стоимость:</legend>
       <label><input class="runner" type="range" min="0" max="15000" step=""></label>
       <label class="min">от<input class="cost-min" type="number" value="0"></label>
       <label class="max">до<input class="cost-max" type="number" value="15000"></label>
     </fieldset>
-
-    <fieldset>
+    -->
+    <main>
+    <div class="container">
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <div class="page-catalog">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+          <legend>Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      <fieldset>
       <legend>Сетка</legend>
       <ul class="grid">
         <li>
@@ -332,5 +355,9 @@
     <img src="img/index/close-cross.svg" width="21" height="21" alt="Кнопка закрыть">
   </button>
 </section>
+
+
+
+
 </body>
 </html>
