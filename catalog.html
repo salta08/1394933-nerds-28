@@ -212,52 +212,42 @@
 
 
 
-
-
-
-  <div class="">
-    <div class="container">
-      <section class="modal modal-map">
+      <section>
         <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
-        <img src="img/index/img-map.png" width="1440" height="416"
-             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        <img  class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
+        <div class="interactive-map">
+          <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU"
+                  type="text/javascript">
+          </script>
+          <div id="map" style="width: 1440px; height: 416px"></div>
+          <script type="text/javascript">
+            ymaps.ready(init);
 
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
-        </script>
-        <div id="map" style="width: 1440px; height: 416px"></div>
-        <script type="text/javascript">
-          ymaps.ready(init);
+            function init() {
+              var myMap = new ymaps.Map("map", {
+                center: [59.938632, 30.323279],
 
-          function init() {
-            var myMap = new ymaps.Map("map", {
-              center: [59.938632, 30.323279],
+                zoom: 18
+              });
+            }
 
-              zoom: 18
-            });
-          }
-
-        </script>
+          </script>
+        </div>
 
 
-
-        <section class="footer-contacts">
-          <p class="footer-title">Nёrds design studio</p>
-          <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-          <p class="footer-tel">тел. +7 (812) 275-75-75</p>
-          <a class="button-write" href="">Напишите нам</a>
-        </section>
+        <div class="cart-map">
+          <img class="img-map" src="img/index/img-map.png" width="1440" height="416"
+               alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          <section class="map-contacts">
+            <p class="map-title">Nёrds design studio</p>
+            <p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p class="tel">тел. +7 (812) 275-75-75</p>
+            <a class="button-write" href="">Напишите нам</a>
+          </section>
+        </div>
       </section>
-    </div>
-  </div>
-</main>
 
 
-
-
-
-</main>
+    </main>
 
 
 <footer>
