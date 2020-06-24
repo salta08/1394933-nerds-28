@@ -172,17 +172,14 @@
     </section>
   </div>
 
-<div class="">
-  <div class="container">
-  <section class="modal modal-map">
+
+
+  <div>
+  <section>
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
-    <img src="img/index/map.png" width="1440" height="416"
-         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    <img  class="img-marker" src="img/index/map-marker.png" width="231" height="190" alt="Маркер на карте проезда">
 
-
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU" type="text/javascript">
+    <script class="interactive-map" src="https://api-maps.yandex.ru/2.1/?apikey=1234567890&lang=ru_RU"
+            type="text/javascript">
     </script>
     <div id="map" style="width: 1440px; height: 416px"></div>
     <script type="text/javascript">
@@ -198,20 +195,26 @@
 
     </script>
 
-
-
-    <section class="footer-contacts">
-      <p class="footer-title">Nёrds design studio</p>
-      <p class="footer-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-      <p class="footer-tel">тел. +7 (812) 275-75-75</p>
+    <div class="map">
+      <img class="img-map" src="img/index/img-map.png" width="1440" height="416"
+           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <section class="map-contacts">
+      <p class="map-title">Nёrds design studio</p>
+      <p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+      <p class="tel">тел. +7 (812) 275-75-75</p>
       <a class="button-write" href="">Напишите нам</a>
-      </section>
+    </section>
+
+
+    </div>
+
   </section>
   </div>
-</div>
+
 
 
 </main>
+
 
 
 <footer>
@@ -269,7 +272,7 @@
 </footer>
 
 
-<section class="modal modal-feedback">
+<section class="modal-feedback">
   <h2 class="visually-hidden">Форма обратной связи</h2>
   <h3 class="modal-description">Напишите нам</h3>
   <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
