@@ -294,18 +294,18 @@ main-header {
 .slider-item:nth-child(1) {
   background-image: url("../img/index/slide-first.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 100% -1px;
 }
 
 
 .slider-item:nth-child(2) {
-  background-image: url("");
+  background-image: url("../img/index/slide-second.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("http://dummyimage.com/300x300/99cccc");
+  background-image: url("../img/index/slide-third.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -339,24 +339,20 @@ main-header {
 }
 
 .slider-item b {
-  max-width: 538px;
   margin: 0;
-  margin-bottom: 25px;
+  padding-bottom: 250px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
 .slider-item p {
-  max-width: 400px;
   margin: 0;
   margin-bottom: 38px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--light-black);
-  display: flex;
-  min-height: 49px;
 }
 
 .button {
@@ -373,7 +369,6 @@ main-header {
   text-align: center;
   color: var(--basic-white);
   background: var(--basic-red);
-  border: 0;
   border-radius: 3px;
   border-color: var(--basic-red);
 }
