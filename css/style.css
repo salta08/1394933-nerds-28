@@ -89,10 +89,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-/*img {*/
-/*  max-width: 100%;*/
-/*  height: auto;*/
-/*}*/
 
 
 /* main-navigation */
@@ -145,6 +141,7 @@ input[type="radio"].visually-hidden {
 
 
 /* main-navigation grid */
+
 .main-header-logo {
   width: 160px;
   height: 65px;
@@ -175,7 +172,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- width: 450px;
+  width: 450px;
   justify-content: space-between;
   margin-top: 0;
   margin-right: 245px;
@@ -295,13 +292,14 @@ main-header {
 }
 
 .slider-item:nth-child(1) {
-  background-image: url("../img/index/slide-first.jpg");
+  background-image: url("../img/index/slide-first.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
+
 .slider-item:nth-child(2) {
-  background-image: url("http://dummyimage.com/300x300/00dd00");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
@@ -640,7 +638,7 @@ table {
 }
 
 .pic-logo a {
-  opacity: 0.8;
+  opacity: 0.2;
 }
 
 .pic-logo a:hover,
@@ -650,7 +648,7 @@ table {
 }
 
 .pic-logo a:active {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .pic-logo {
@@ -668,6 +666,7 @@ table {
   padding-top: 63px;
   padding-bottom: 49px;
   margin-left: -5px;
+  position: relative;
 }
 
 
@@ -675,27 +674,32 @@ table {
   padding-top: 46px;
   padding-bottom: 44px;
   margin-left: 5px;
+  position: relative;
 }
 
 .pic-logo-third {
   padding-top: 65px;
   padding-bottom: 63px;
   padding-left: 20px;
+  position: relative;
 }
 
 .pic-logo-fourth {
   padding-top: 52px;
   padding-bottom: 44px;
   padding-left: 27px;
+  position: relative;
 }
+
+
 
 
 .pic-logo-first::before,
 .pic-logo-first::after {
   content: "";
   position: absolute;
-  top: 1673px;
-  left: 405px;
+  top: 89px;
+  left: 218px;
   width: 52px;
   height: 2px;
   background-color: var(--pale-grey);
@@ -715,8 +719,8 @@ table {
 .pic-logo-second::after {
   content: "";
   position: absolute;
-  top: 1673px;
-  left: 705px;
+  top: 89px;
+  left: 229px;
   width: 52px;
   height: 2px;
   background-color: var(--pale-grey);
@@ -736,8 +740,8 @@ table {
 .pic-logo-third::after {
   content: "";
   position: absolute;
-  top: 1673px;
-  left: 1005px;
+  top: 89px;
+  left: 236px;
   width: 52px;
   height: 2px;
   background-color: var(--pale-grey);
@@ -753,7 +757,10 @@ table {
 
 
 /* map */
-
+.map {
+  margin-top: 72px;
+  margin-bottom: 75px;
+}
 
 .img-map {
   width: 100%;
