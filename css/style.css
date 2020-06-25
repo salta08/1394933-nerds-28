@@ -545,6 +545,25 @@ main-header {
   margin-bottom: 25px;
 }
 
+.feature-item {
+  position: relative;
+}
+
+.feature-item::before,
+.feature-item::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -37px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
+
+
+
+
 .our-advantages {
   padding-left: 18px;
 }
@@ -611,16 +630,6 @@ table {
 }
 
 
-
-.feature-items{
-  list-style: none inside;
-}
-.feature-item:before {
-  content: "\2015";
-  margin: 0;
-  margin-right: 7px;
-  color: var(--basic-red);
-}
 
 
 
