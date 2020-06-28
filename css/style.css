@@ -149,6 +149,16 @@ input[type="radio"].visually-hidden {
   height: 65px;
   margin: 0;
   margin-top: 49px;
+  color: var(--basic-black);
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+color: var(--basic-black)
+}
+
+.main-header-logo:active {
+  color: var(--light-grafit);
 }
 
 .main-header {
