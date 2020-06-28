@@ -1,5 +1,6 @@
 :root {
   --basic-white: #FFFFFF;
+  --pale-black: #231F20;
   --light-black: #283136;
   --basic-black: #000000;
   --basic-red: #FB565A;
@@ -1509,6 +1510,7 @@ color: var(--light-black);
   width: 270px;
   justify-content: space-between;
   padding-top: 7px;
+  margin-left: 175px;
 }
 
 
@@ -1571,22 +1573,26 @@ color: var(--light-black);
 .sort-button {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 18px;
+  grid-gap: 19px;
+  margin-top: 28px;
+  color: var(--light-grafit);
+  mix-blend-mode: normal;
+  opacity: 0.2;
 }
-.down .up {
 
-}
 
-.down:hover,
-.down:focus,
-.up:hover,
-.up:focus {
+
+.sort-button:hover,
+.sort-button:focus {
+  color: var(--light-grafit);
   opacity: 1;
-  background-color: var(--light-grafit);
 }
 
 
-
+.sort-button:active,
+.sort-button:active link {
+  color: var(--pale-black);
+}
 
 
 
