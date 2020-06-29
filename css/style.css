@@ -859,8 +859,7 @@ table {
 /* modal */
 
 .modal {
-
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -872,11 +871,7 @@ table {
 }
 
 
-
-
 .modal-description {
-  width: 311px;
-  height: 53px;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
@@ -885,12 +880,8 @@ table {
 }
 
 
-
-
-
-
 .modal-feedback {
-  display: none;
+  position: relative;
   top: 120px;
   bottom: auto;
   margin-left: 240px;
@@ -1743,9 +1734,16 @@ color: var(--light-black);
   display: none;
 }
 
+.catalog-item {
+  position: relative;
+}
 
-
-
+.catalog-item-info {
+  width: 100%;
+  position: absolute;
+  top: 360px;
+  left: 0;
+}
 
 
 
