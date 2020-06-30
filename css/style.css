@@ -774,7 +774,7 @@ table {
 }
 
 .img-map {
-  width: 100%;
+  width: 1440px;
   height: 416px;
   border: none;
   position: absolute;
@@ -870,11 +870,10 @@ table {
 
 
 .modal-feedback {
+  width: 960px;
   position: relative;
   top: 120px;
   bottom: auto;
-  margin-left: 240px;
-  margin-right: 240px;
   padding: 63px 99px 84px 100px;
   background: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -931,6 +930,7 @@ table {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 761px;
 }
 
 .text-user {
