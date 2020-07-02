@@ -46,10 +46,10 @@
             </div>
             <div class="price-controls">
               <label class="min-price">
-                от <input type="number" name="min-price" value="0">
+                от <input type="number" name="min-price" placeholder="0">
               </label>
               <label class="max-price">
-                до <input type="number" name="max-price" value="15000">
+                до <input type="number" name="max-price"  placeholder="15000">
               </label>
             </div>
           </div>
@@ -109,19 +109,25 @@
     <p class="sort">Сортировать:</p>
     <ul class="sort-items">
       <li>
-        <a class="sort-item" href="">по цене</a>
+        <a class="sort-item sorting" href="">по цене</a>
       </li>
       <li>
-        <a class="sort-item" href="">по типу</a>
+        <a class="sort-item sorting" href="">по типу</a>
       </li>
       <li>
-        <a class="sort-item" href="">по названию</a>
+        <a class="sort-item sorting" href="">по названию</a>
+      </li>
+      <li>
+      <a class="sort-item down">
+        <img src="img/catalog/icon-down-pointer.svg" width="11" height="10" alt="Вниз">
+      </a>
+      </li>
+      <li>
+        <a class="sort-item up">
+          <img src="img/catalog/icon-up-pointer.svg" width="11" height="10" alt="Вверх">
+        </a>
       </li>
     </ul>
-    <div class="sort-button">
-    <img  class="down" src="img/catalog/icon-down-pointer.svg" alt="Вниз">
-    <img class="up" src="img/catalog/icon-up-pointer.svg" alt="Вверх">
-    </div>
   </section>
 
 

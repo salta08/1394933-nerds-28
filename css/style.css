@@ -1265,6 +1265,14 @@ background-color: var(--basic-black);
   background: var(--pale-grey);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance:textfield;
+}
+
+
 
 
 
@@ -1483,16 +1491,11 @@ color: var(--light-black);
 .cont {
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 
 .sort-list {
-  padding: 0;
-  margin: 0;
   margin-left: 140px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .sort {
@@ -1504,14 +1507,11 @@ color: var(--light-black);
 
 .sort-items {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 101px;
-  width: 270px;
-  justify-content: space-between;
+  display: flex;
   padding-top: 7px;
-  margin-left: 175px;
+  margin-left: auto;
+  width: 361px;
 }
-
 
 
 
@@ -1520,76 +1520,56 @@ color: var(--light-black);
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 25px;
+}
+
+.down {
+  margin-left: 22px;
+}
+
+.up {
+  margin-left: -7px;
+  margin-right: 0;
+}
+
+
+
+.sorting {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
-.sort-item:hover,
-.sort-item:focus {
+.sorting:hover,
+.sorting:focus {
   opacity: 0.6;
 }
 
-.sort-item:active,
-.sort-item:active link {
-  color: var(--basic-black);
+.sorting:active,
+.sorting:active link {
   opacity: 1;
 }
-/*
-.sort-items {
-  position: relative;
-}
 
-.sort-items::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 359px;
-  width: 11px;
-  height: 10px;
-  background-image: url("../img/catalog/icon-down-pointer.svg");
-  background-repeat: no-repeat;
+
+
+
+.down, .up {
   color: var(--light-grafit);
   mix-blend-mode: normal;
-  opacity: 0.2;
-}
-
-.sort-items::after {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 390px;
-  width: 11px;
-  height: 10px;
-  background-image: url("../img/catalog/icon-up-pointer.svg");
-  background-repeat: no-repeat;
-  color: var(--light-grafit);
-  mix-blend-mode: normal;
-  opacity: 0.2;
-}
-
-*/
-.sort-button {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 19px;
-  margin-top: 28px;
-  color: var(--light-grafit);
-  mix-blend-mode: normal;
-  opacity: 0.2;
+  opacity: 0.2 ;
 }
 
 
 
-.sort-button:hover,
-.sort-button:focus {
+.down:hover, .up:hover,
+.down:focus, .up:focus {
   color: var(--light-grafit);
   opacity: 1;
 }
 
 
-.sort-button:active,
-.sort-button:active link {
+.down:active, .up:active,
+.down:active link, .up:active link {
   color: var(--pale-black);
 }
 
