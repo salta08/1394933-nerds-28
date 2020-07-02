@@ -1727,8 +1727,8 @@ color: var(--light-black);
 .catalog-item-info {
   width: 100%;
   position: absolute;
-  top: 400px;
-  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 
