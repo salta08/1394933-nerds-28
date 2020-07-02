@@ -1157,7 +1157,10 @@ background-color: var(--basic-black);
   line-height: 55px;
   text-align: center;
   margin: 0;
-  margin-top: 72px;
+  padding-top: 72px;
+  padding-bottom: 108px;
+  margin-bottom: -108px;
+  background-color: var(--pale-grey);
 }
 
 
@@ -1342,14 +1345,10 @@ background-color: var(--basic-black);
 }
 
 
-
-
-.grid label,
-.benefits label{
-color: var(--light-black);
+.grid input,
+.benefits input{
+  opacity: 0.4;
 }
-
-
 .grid input:hover,
 .grid input:focus,
 .benefits input:hover,
@@ -1358,19 +1357,22 @@ color: var(--light-black);
   background: var(--radio-grey);
 }
 
+.grid input:disabled,
+.benefits input:disabled {
+  opacity: 0.1;
+}
 
+
+.grid label,
+.benefits label{
+color: var(--light-black);
+}
 
 .grid label:hover,
 .grid label:focus,
 .benefits label:hover,
 .benefits label:focus {
   color: var(--light-black);
-}
-
-
-.grid input:disabled,
-.benefits input:disabled {
-  opacity: 0.1;
 }
 
 .grid label:disabled,
@@ -1391,7 +1393,6 @@ color: var(--light-black);
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-off.svg");
-  opacity: 0.4;
 }
 
 .filter-input-radio:checked + label::before {
@@ -1402,7 +1403,6 @@ color: var(--light-black);
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-on.svg");
-  opacity: 0.4;
 }
 
 
@@ -1422,7 +1422,6 @@ color: var(--light-black);
   width: 23px;
   height: 23px;
   background-image: url("../img/catalog/checkbox-off.svg");
-  opacity: 0.4;
 }
 
 .filter legend:nth-child(3) {
@@ -1439,7 +1438,6 @@ color: var(--light-black);
   width: 26px;
   height: 23px;
   background-image: url("../img/catalog/checkbox-on.svg");
-  opacity: 0.4;
 }
 
 
@@ -1473,7 +1471,7 @@ color: var(--light-black);
 .button-show:active {
   background: var(--extra-grey);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  text-decoration-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
