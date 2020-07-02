@@ -1638,7 +1638,6 @@ color: var(--light-black);
   align-items: center;
   text-align: center;
   background: var(--pale-grey);
-
 }
 
 
@@ -1697,19 +1696,17 @@ color: var(--light-black);
 }
 
 
-/* browser */
+/* hover */
 
-.catalog-item-browser,
 .catalog-item-browser {
   color: var(--radio-grey);
   opacity: 0.12;
 }
-.catalog-item-browser:hover,
-.catalog-item-browser:focus {
-  color: var(--radio-grey);
+
+.card:hover .catalog-item-browser,
+.card:focus .catalog-item-browser{
   opacity: 1;
 }
-
 
 /* card hover*/
 
