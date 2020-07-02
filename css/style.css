@@ -778,6 +778,7 @@ table {
 
 
 
+
 /* map */
 .map {
   margin-top: 72px;
@@ -789,11 +790,9 @@ table {
   height: 416px;
   border: none;
   position: absolute;
-  z-index: 1;
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 
 
@@ -805,21 +804,8 @@ table {
   flex-direction: column;
   text-align: center;
   align-items: start;
-  position: relative;
-  top: 54px;
-  left: 140px;
-  z-index: 16;
-}
-
-
-.interactive-map {
   position: absolute;
-  z-index: 15;
-}
-
-.cart-map {
-  position: relative;
-  z-index: 9;
+  margin: 54px 0 54px 0;
 }
 
 
@@ -828,8 +814,6 @@ table {
   padding-left: 50px;
 }
 
-
-
 .map-title {
   font-weight: bold;
   font-size: 18px;
@@ -837,9 +821,7 @@ table {
   text-transform: uppercase;
   margin-top: 49px;
   margin-bottom: 5px;
-
 }
-
 
 .address, .tel {
   font-weight: normal;
@@ -1255,6 +1237,8 @@ background-color: var(--basic-black);
 }
 
 .price-controls input {
+  font-family: inherit;
+  font-size: inherit;
   width: 60px;
   padding: 10px;
   margin-left: 10px;
