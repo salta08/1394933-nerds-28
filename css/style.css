@@ -1346,7 +1346,7 @@ background-color: var(--basic-black);
 
 
 .grid input,
-.benefits input{
+.benefits input {
   opacity: 0.4;
 }
 .grid input:hover,
