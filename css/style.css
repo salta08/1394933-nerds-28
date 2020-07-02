@@ -1751,6 +1751,7 @@ color: var(--light-black);
   background: var(--pale-grey);
   border-radius: 3px;
   padding: 17px 20px 15px 20px;
+  margin-right: 11px;
 }
 
 .pagination-item-next a {
@@ -1784,19 +1785,13 @@ color: var(--light-black);
   color: var(--basic-black);
 }
 
-
-
 .pagination-items {
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 11px;
-  width: 443px;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 55px;
   margin-bottom: 60px;
 }
-
-
 
 
 
