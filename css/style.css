@@ -1359,53 +1359,9 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
-.filter-option label {
-  color: var(--light-black);
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-  padding-left: 36px;
-}
 
 
-.grid input,
-.benefits input {
-  opacity: 0.4;
-}
-.grid input:hover,
-.grid input:focus,
-.benefits input:hover,
-.benefits input:focus {
-  opacity: 1;
-  background: var(--radio-grey);
-}
-
-.grid input:disabled,
-.benefits input:disabled {
-  opacity: 0.1;
-}
-
-
-.filter-input-radio {
-  color: var(--light-black);
-}
-
-.grid label:hover,
-.grid label:focus,
-.benefits label:hover,
-.benefits label:focus {
-  color: var(--light-black);
-}
-
-.grid label:disabled,
-.benefits label:disabled {
-  color: var(--light-black);
-  mix-blend-mode: normal;
-  opacity: 0.3;
-}
-
-/* Сетка  */
+/* radio  */
 
 
 .filter-input-radio + label::before {
@@ -1416,6 +1372,8 @@ input[type="number"]::-webkit-input-placeholder {
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
 
@@ -1427,10 +1385,12 @@ input[type="number"]::-webkit-input-placeholder {
   width: 25px;
   height: 25px;
   background-image: url("../img/catalog/radio-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
 
-/* Особенности*/
+/* checkbox*/
 
 .filter-checkbox {
   margin-top: 9px;
@@ -1446,6 +1406,8 @@ input[type="number"]::-webkit-input-placeholder {
   width: 23px;
   height: 23px;
   background-image: url("../img/catalog/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
 }
 
 
@@ -1454,15 +1416,43 @@ input[type="number"]::-webkit-input-placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  width: 26px;
+  width: 25px;
   height: 23px;
   background-image: url("../img/catalog/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.filter-option label:hover:before {
+  opacity: 1;
+}
+
+.filter-option label:focus:before {
+  opacity: 1;
+}
+.filter-option label:disabled:before {
+  opacity: 0.1;
 }
 
 
+.filter-option label {
+  color: var(--light-black);
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 36px;
+}
 
+.filter-option label:hover,
+.filter-option label:focus {
+  color: var(--light-black);
+}
 
-
+.filter-option label:disabled {
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
 
 
 /*Кнопка Показать */
