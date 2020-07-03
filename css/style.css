@@ -900,6 +900,33 @@ table {
   padding: 0;
 }
 
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+textarea[type="text"]::placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+textarea[type="text"]::-webkit-input-placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+
 .name-user, .email-user {
   padding-left: 16px;
 }
@@ -1243,7 +1270,6 @@ background-color: var(--basic-black);
   padding: 10px;
   margin-left: 10px;
   text-align: center;
-  color: var(--light-black);
   border: none;
   border-radius: 3px;
   background: var(--pale-grey);
@@ -1256,7 +1282,12 @@ input::-webkit-inner-spin-button {
   -moz-appearance:textfield;
 }
 
-
+input[type="number"]::placeholder {
+  color: var(--light-black);
+}
+input[type="number"]::-webkit-input-placeholder {
+  color: var(--light-black);
+}
 
 
 
@@ -1272,6 +1303,11 @@ input::-webkit-inner-spin-button {
   width: 260px;
 }
 
+.cost {
+  margin:0;
+  padding: 0;
+  padding-top: 19px;
+}
 
 .filter fieldset {
   padding: 0;
@@ -1289,9 +1325,13 @@ input::-webkit-inner-spin-button {
 }
 
 .filter ul {
+  line-height: 19px;
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--light-black);
   padding: 0;
   margin: 0;
-  line-height: 19px;
 }
 
 
@@ -1304,25 +1344,15 @@ input::-webkit-inner-spin-button {
   font-style: normal;
 }
 
-
-.filter ul {
-  list-style: none;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--light-black);
-}
-
-.cost {
-  margin:0;
+.filter legend:nth-child(3) {
+  margin: 0;
   padding: 0;
-  padding-top: 19px;
+  margin-top: 26px;
 }
 
 
 .filter-option {
   margin-top: 14px;
-  padding: 0;
   padding-bottom: 7px;
 }
 
@@ -1355,9 +1385,8 @@ input::-webkit-inner-spin-button {
 }
 
 
-.grid label,
-.benefits label{
-color: var(--light-black);
+.filter-input-radio {
+  color: var(--light-black);
 }
 
 .grid label:hover,
@@ -1386,6 +1415,7 @@ color: var(--light-black);
   height: 25px;
   background-image: url("../img/catalog/radio-off.svg");
 }
+
 
 .filter-input-radio:checked + label::before {
   content: "";
@@ -1416,11 +1446,6 @@ color: var(--light-black);
   background-image: url("../img/catalog/checkbox-off.svg");
 }
 
-.filter legend:nth-child(3) {
-  margin: 0;
-  padding: 0;
-  margin-top: 26px;
-}
 
 .filter-input-checkbox:checked + label::before {
   content: "";
