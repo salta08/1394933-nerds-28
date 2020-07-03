@@ -46,6 +46,9 @@
   margin: 0 auto;
   padding: 0;
 }
+.container-2 {
+  width: 1440px;
+}
 
 img {
   max-width: 100%;
@@ -225,10 +228,11 @@ input[type="radio"].visually-hidden {
 
 
 
-/* slaider */
+/* slider */
 
-.container {
+.slider-container {
   box-sizing: border-box;
+  background-color: var(--pale-grey);
 }
 
 
