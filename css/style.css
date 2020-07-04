@@ -863,6 +863,7 @@ table {
 
 .footer-social {
   display: flex;
+  margin-bottom: 68px;
 }
 
 
@@ -894,7 +895,7 @@ table {
 .social-button:active {
   background: linear-gradient(0deg, var(--dark-red), var(--dark-red)), var(--basic-white);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
-  opacity: 0.3;
+  fill-opacity: 0.3;
 }
 
 
@@ -1094,7 +1095,6 @@ textarea[type="text"]::-webkit-input-placeholder {
   color: var(--extra-red);
 }
 
-/* modal-close */
 
 .modal-close {
   position: absolute;
