@@ -420,26 +420,40 @@ main-header {
 
 /* services */
 
-.services {
+.service {
   min-height: 348px;
   margin-top: 80px;
   padding-bottom: 80px;
   border-bottom: 2px solid var(--pale-grey);
 }
 
-.service {
+.service-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 100px;
+}
+
+.service-items h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 22px;
+  margin-bottom: 16px;
 }
 
-.service-text {
+.service-items p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--light-black);
+  width: 260px;
+  margin-bottom: 50px;
 }
+
 
 .button-service {
   width: 160px;
@@ -458,13 +472,13 @@ main-header {
   background: var(--basic-red);
 }
 
-.button-red a:hover,
-.button-red a:focus {
-  color: var(--extra-red);
+.button-red:hover,
+.button-red:focus {
+  background-color: var(--extra-red);
 }
 
-.button-red a:active {
-  color: var(--dark-red);
+.button-red:active {
+  background-color: var(--dark-red);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
@@ -474,13 +488,13 @@ main-header {
   background: var(--basic-green);
 }
 
-.button-green a:hover,
-.button-green a:focus {
-  color: var(--extra-green);
+.button-green:hover,
+.button-green:focus {
+  background-color: var(--extra-green);
 }
 
-.button-green a:active {
-  color: var(--dark-green);
+.button-green:active {
+  background-color: var(--dark-green);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
@@ -490,13 +504,13 @@ main-header {
   background: var(--basic-yellow);
 }
 
-.button-yellow a:hover,
-.button-yellow a:focus {
-  color: var(--extra-yellow);
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: var(--extra-yellow);
 }
 
 .button-yellow a:active {
-  color: var(--dark-yellow);
+  background-color: var(--dark-yellow);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
@@ -507,32 +521,30 @@ main-header {
 
 
 
-.service-items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px;
-}
 
-
-.service-text {
-  margin-bottom: 50px;
-}
-
-.service {
-  margin-top: 22px;
-  margin-bottom: 16px;
-}
 
 
 
 
 
 /* about us */
+.company {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+}
 
-.desc {
+
+.description {
+  margin: 0;
+  padding-top: 73px;
+}
+
+.our-advantages {
+  padding-top: 39px;
+  padding-bottom: 75px;
+}
+.heading {
+  width: 651px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -542,6 +554,7 @@ main-header {
 }
 
 .principles {
+  width: 646px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -550,6 +563,7 @@ main-header {
 }
 
 .features {
+  width: 306px;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -559,6 +573,7 @@ main-header {
 }
 
 .feature-items {
+  width: 399px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -566,14 +581,13 @@ main-header {
   list-style: none;
   margin-left: -3px;
 }
-
-.class {
+.feature-items:last-child {
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .feature-item {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .feature-item::before,
@@ -590,14 +604,11 @@ main-header {
 
 
 
-
-.our-advantages {
+.advantages {
   padding-left: 18px;
 }
 
-
-
-.advantages {
+.advantages p {
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -609,17 +620,16 @@ main-header {
   margin-top: 33px;
 }
 
-.figures {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
-
-}
-
 
 table {
   margin: 0;
   margin-top: 27px;
+}
+
+.figures {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
 }
 
 .percent {
@@ -637,22 +647,10 @@ table {
   margin: 0;
 }
 
-/* about us grid */
 
-.company {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-}
 
-.about-us {
-  margin: 0;
-  padding-top: 73px;
-}
 
-.our-advantages {
-  padding-top: 39px;
-  padding-bottom: 75px;
-}
+
 
 
 
@@ -662,6 +660,11 @@ table {
 
 .pic-logo {
   list-style: none;
+  display: grid;
+  grid-template-columns: 279px 298px 298px 279px;
+  border-top: 2px solid var(--pale-grey);
+  border-bottom: 2px solid var(--pale-grey);
+  margin: 0;
 }
 
 .pic-logo a {
@@ -677,16 +680,6 @@ table {
 .pic-logo a:active {
   opacity: 0.1;
 }
-
-.pic-logo {
-  display: grid;
-  grid-template-columns: 279px 298px 298px 279px;
-  border-top: 2px solid var(--pale-grey);
-  border-bottom: 2px solid var(--pale-grey);
-  margin: 0;
-}
-
-
 
 
 .pic-logo-first {
@@ -717,9 +710,6 @@ table {
   padding-left: 27px;
   position: relative;
 }
-
-
-
 
 .pic-logo-first::before,
 .pic-logo-first::after {
@@ -784,6 +774,8 @@ table {
 
 
 
+
+
 /* map */
 
 .map {
@@ -801,6 +793,9 @@ table {
 }
 
 
+.map-contacts-container {
+  padding-top: 54px;
+}
 
 .map-contacts {
   width: 319px;
@@ -808,33 +803,29 @@ table {
   background: var(--basic-white);
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: start;
   position: relative;
-  top: 54px;
-  left: 0;
-  /*
-  position:absolute;
-  padding: 54px 0 54px 0;
-   */
+  z-index: 7;
 }
-
-
 
 .map-contacts p {
   padding-left: 50px;
+
 }
 
 .map-title {
+  width: 193px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 49px;
   margin-bottom: 5px;
+
 }
 
 .address, .tel {
+  width: 230px;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -843,7 +834,6 @@ table {
 }
 
 .tel {
-  margin: 0;
   margin-top: 2px;
   margin-bottom: 37px;
 }
