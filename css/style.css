@@ -103,8 +103,38 @@ input[type="radio"].visually-hidden {
 
 
 /* navigation */
+.main-header {
+  background-color: var(--pale-grey);
+}
 
-.main-nav-items, .main-nav-items-2  {
+.main-header .container {
+  max-width: 1160px;
+  display: flex;
+}
+
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  margin-top: 49px;
+  fill: var(--basic-black);
+  margin-right: 202px;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  fill: var(--basic-black);
+}
+
+.main-header-logo:active {
+  fill: var(--light-grafit);
+}
+
+
+
+
+
+.main-nav-items, .nav-basket  {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -113,8 +143,23 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.nav-item-current {
-  width: 74px;
+.main-nav-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  padding: 0;
+}
+
+
+
+.nav-item:nth-child(2),
+.nav-item:nth-child(4) {
+  margin-left: 44px;
+}
+
+.nav-item:nth-child(3) {
+  margin-left: 48px;
 }
 
 
@@ -124,7 +169,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-item a:hover,
-.nav-itema :focus {
+.nav-item a:focus {
   color: var(--basic-red);
 }
 
@@ -156,56 +201,9 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-red);
 }
 
-
-
-.main-header-logo {
-  width: 160px;
-  height: 65px;
-  margin: 0;
-  margin-top: 49px;
-  color: var(--basic-black);
-  margin-right: 202px;
-}
-
-.main-header-logo a:hover,
-.main-header-logo a:focus {
- color: var(--basic-black)
-}
-
-.main-header-logo:active {
-  color: var(--light-grafit);
-}
-
-
-.main-header {
-  background-color: var(--pale-grey);
-
-}
-
- .main-header .container {
-   max-width: 1160px;
-  display: flex;
-}
-
-
-.main-nav-items  {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.nav-basket {
   margin-top: 75px;
-  padding: 0;
-}
-
-
-
-
-.nav-item {
-  margin-left: 44px;
-}
-
-
-.basket {
-  margin-left: 245px;
+  margin-left: 247px;
 }
 
 
@@ -228,6 +226,8 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
 /* slider */
 
 .slider-container {
@@ -243,13 +243,13 @@ input[type="radio"].visually-hidden {
   clip: rect(0, 0, 0, 0);
 }
 
+/*
+.main-header {
 
-main-header {
-
-  /* Временно для демонстрации */
+  Временно для демонстрации
   height: 50px;
 }
-
+*/
 .slider {
   width: 1160px;
   position: relative;
@@ -1165,6 +1165,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   /* Для демонстрации */
   width: 260px;
   margin: 50px auto;
+
 }
 
 .range-filter {
