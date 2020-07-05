@@ -46,9 +46,6 @@
   margin: 0 auto;
   padding: 0;
 }
-.container-2 {
-  width: 1440px;
-}
 
 img {
   max-width: 100%;
@@ -103,6 +100,7 @@ input[type="radio"].visually-hidden {
 
 
 /* navigation */
+
 .main-header {
   background-color: var(--pale-grey);
 }
@@ -243,21 +241,18 @@ input[type="radio"].visually-hidden {
   clip: rect(0, 0, 0, 0);
 }
 
-/*
+/* Временно для демонстрации
 .main-header {
-
-  Временно для демонстрации
   height: 50px;
 }
 */
 .slider {
   width: 1160px;
-  position: relative;
   min-height: 431px;
   margin-top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 }
+
 
 
 
@@ -266,8 +261,8 @@ input[type="radio"].visually-hidden {
   left: 50%;
   bottom: 96px;
   z-index: 100;
-  width: 88px;
-  height: 18px;
+  width: 123px;
+  height: 36px;
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -278,7 +273,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   width: 18px;
   height: 18px;
-  padding: 5px;
+  margin-right: 17px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -341,7 +336,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-/*
+
 #product-1:checked ~ .slider-controls .slider-controls-item--1::before,
 #product-2:checked ~ .slider-controls .slider-controls-item--2::before,
 #product-3:checked ~ .slider-controls .slider-controls-item--3::before {
@@ -350,14 +345,14 @@ input[type="radio"].visually-hidden {
   left: 50%;
   top: 50%;
   z-index: 2;
-  width: 8px;
-  height:8px;
-  margin: -4px;
+  width: 4px;
+  height:4px;
+  margin: 4px;
   background-color: inherit;
   border: 2px solid var(--argentum);
   border-radius: 50%;
 }
-*/
+
 .slider-item b {
   width: 538px;
   font-weight: 500;
@@ -1514,6 +1509,7 @@ input[type="number"]::-webkit-input-placeholder {
 
 .button-down {
   margin-left: 22px;
+  color: var(--pale-black);
 }
 
 .button-up {
@@ -1523,7 +1519,7 @@ input[type="number"]::-webkit-input-placeholder {
 .sort-button {
   color: var(--light-grafit);
   mix-blend-mode: normal;
-  opacity: 0.2 ;
+  opacity: 0.2;
 }
 
 .sort-button:hover,
@@ -1536,6 +1532,7 @@ input[type="number"]::-webkit-input-placeholder {
 .sort-button:active,
 .sort-button:active link {
   color: var(--pale-black);
+  opacity: 1;
 }
 
 
