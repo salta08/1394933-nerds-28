@@ -52,7 +52,7 @@ img {
 }
 
 body {
-  min-width: 1180px;
+  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif, "Roboto Slab", serif;
@@ -230,6 +230,9 @@ input[type="radio"].visually-hidden {
 
 .slider-container {
   box-sizing: border-box;
+}
+
+.background-slider{
   background-color: var(--pale-grey);
 }
 
@@ -771,6 +774,7 @@ table {
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 
 .map-contacts-container {
