@@ -767,15 +767,12 @@ table {
 }
 
 .img-map {
-  width: 1440px;
   height: 416px;
+  text-align: center;
   border: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  z-index: 2;
 }
-
-
 
 .map-contacts-container {
   padding-top: 54px;
@@ -788,9 +785,12 @@ table {
   display: flex;
   flex-direction: column;
   align-items: start;
-  position: relative;
-  z-index: 7;
+  position: absolute;
+  z-index: 9;
 }
+
+
+
 
 .map-contacts p {
   padding-left: 50px;
@@ -1513,8 +1513,9 @@ input[type="number"]::-webkit-input-placeholder {
 
 .button-down {
   margin-left: 22px;
-  color: var(--pale-black);
 }
+
+
 
 .button-up {
   margin-left: 18px;
