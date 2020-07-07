@@ -47,12 +47,9 @@
   padding: 0;
 }
 
-img {
-  max-width: 100%;
-}
 
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif, "Roboto Slab", serif;
@@ -761,19 +758,25 @@ table {
 .map {
   margin-top: 72px;
   margin-bottom: 75px;
+  position: relative;
 }
 
 .img-map {
-  height: 416px;
-  text-align: center;
-  border: none;
-  position: relative;
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
+  position: relative;
 }
 
 .map-contacts-container {
-  padding-top: 54px;
+  position: absolute;
+  height: 320px;
+  left: 140px;
+  top: 54px;
+  z-index: 9;
 }
+
 
 .map-contacts {
   width: 319px;
@@ -782,8 +785,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: start;
-  position: absolute;
-  z-index: 9;
 }
 
 
@@ -1484,14 +1485,22 @@ input[type="number"]::-webkit-input-placeholder {
   width: 361px;
 }
 
-
-
 .sorting a {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 25px;
+}
+
+
+.sorting-price a {
+  color: var(--basic-black);
+}
+
+
+.sorting-type a,
+.sorting-name a {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
@@ -1510,19 +1519,18 @@ input[type="number"]::-webkit-input-placeholder {
 
 .button-down {
   margin-left: 22px;
+  color: var(--pale-black);
 }
 
 
 
 .button-up {
   margin-left: 18px;
-}
-
-.sort-button {
   color: var(--light-grafit);
   mix-blend-mode: normal;
   opacity: 0.2;
 }
+
 
 .sort-button:hover,
 .sort-button:focus {
