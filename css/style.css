@@ -1713,32 +1713,39 @@ input[type="number"]::-webkit-input-placeholder {
   margin-top: 55px;
   margin-bottom: 60px;
   padding-left: 0;
-  width: 446px;
+  width: 457px;
 }
 
-.pagination-item a {
+.pagination a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 11px;
+}
+
+.first-page a {
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid var(--white-grey);
+  color: var(--basic-black);
+  padding: 14px 17px 12px 17px;
+}
+
+.second-page a,
+.third-page a {
   color: var(--basic-black);
   background: var(--pale-grey);
-  border-radius: 3px;
   padding: 17px 20px 15px 20px;
-  margin-right: 11px;
-  display: inline-block;
 }
 
 .pagination-item-next a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
   text-transform: uppercase;
+  padding: 17px 77px 15px 78px;
   color: var(--basic-black);
   background: var(--pale-grey);
-  border-radius: 3px;
-  padding: 17px 77px 15px 78px;
-  display: inline-block;
 }
+
 
 .pagination a:hover,
 .pagination a:focus {
