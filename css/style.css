@@ -859,6 +859,7 @@ table {
   height: 79px;
   margin-right: 11px;
   background: linear-gradient(0deg, var(--grey), var(--grey)), var(--basic-white);
+  fill: var(--basic-white)
 }
 
 
@@ -911,9 +912,9 @@ table {
 /* modal */
 
 .modal-feedback {
-  display: none;
+
   position: fixed;
-  z-index: 100;
+  z-index: 150;
   top: auto;
   bottom: auto;
   padding: 63px 99px 84px 100px;
