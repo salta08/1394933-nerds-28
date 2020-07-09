@@ -44,7 +44,7 @@
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 
@@ -224,10 +224,6 @@ input[type="radio"].visually-hidden {
 
 
 /* slider */
-
-.slider-container {
-  box-sizing: border-box;
-}
 
 .background-slider{
   background-color: var(--pale-grey);
@@ -599,7 +595,7 @@ input[type="radio"].visually-hidden {
 
 
 .advantages {
-  margin-top: 35px;
+  margin-top: 37px;
 }
 
 .advantages p {
@@ -609,12 +605,12 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 33px;
+  margin-top: 34px;
 }
 
 
 table {
-  margin-top: 27px;
+  margin-top: 24px;
   min-height: 125px;
 }
 
@@ -756,8 +752,8 @@ table {
 /* map */
 
 .map {
-  margin-top: 72px;
-  margin-bottom: 75px;
+  margin-top: 78px;
+  margin-bottom: 52px;
   position: relative;
 }
 
@@ -771,7 +767,7 @@ table {
 .map-contacts-container {
   position: absolute;
   height: 320px;
-  top: 54px;
+  top: 55px;
   z-index: 9;
 }
 
@@ -859,9 +855,9 @@ table {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 81px;
-  height: 81px;
-  margin-right: 10px;
+  width: 79px;
+  height: 79px;
+  margin-right: 11px;
   background: linear-gradient(0deg, var(--grey), var(--grey)), var(--basic-white);
 }
 
@@ -880,7 +876,7 @@ table {
 
 
 .social {
-  margin-left: 140px;
+  margin-left: 129px;
 }
 
 .social p {
@@ -889,7 +885,7 @@ table {
   line-height: 36px;
   color: var(--basic-black);
   margin-bottom: 10px;
-  margin-top: 17px;
+  margin-top: 23px;
   width: 660px;
 }
 
@@ -917,9 +913,9 @@ table {
 .modal-feedback {
   display: none;
   position: fixed;
-  z-index: 25;
+  z-index: 100;
   top: auto;
-  bottom: 180px;
+  bottom: auto;
   padding: 63px 99px 84px 100px;
   background: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -931,7 +927,6 @@ table {
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
-  margin: 0;
   margin-bottom: 37px;
 }
 
@@ -943,7 +938,6 @@ table {
   line-height: 18px;
   margin-bottom: 9px;
 }
-
 
 
 .user {
@@ -990,6 +984,8 @@ textarea[type="text"]::-webkit-input-placeholder {
 
 
 .text-user {
+  width: 744px;
+  height: 101px;
   padding-left: 16px;
   padding-top: 16px;
   margin: 0;
@@ -1005,6 +1001,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0;
 }
 
 .feedback-form  {
@@ -1015,31 +1012,25 @@ textarea[type="text"]::-webkit-input-placeholder {
   width: 761px;
 }
 
-.text-user {
-  width: 744px;
-  height: 101px;
-}
+
 
 .button-send {
   width: 259px;
   height: 50px;
-  background: var(--basic-red);
-  border-radius: 3px;
-  margin-top: 44px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  text-align: center;
+  background: var(--basic-red);
   text-transform: uppercase;
   color: var(--basic-white);
+  border-radius: 3px;
+  text-align: center;
   padding: 17px 83px 15px 83px;
   border: none;
+  margin-top: 44px;
 }
 
 
-.feedback-form p {
-  margin: 0;
-}
 
 
 .feedback-form input,
@@ -1051,8 +1042,6 @@ textarea[type="text"]::-webkit-input-placeholder {
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-
-
 
 .feedback-form input:hover,
 .feedback-form textarea:hover {
@@ -1073,6 +1062,8 @@ textarea[type="text"]::-webkit-input-placeholder {
   border: 2px solid var(--extra-red);
   color: var(--extra-red);
 }
+
+
 
 
 .modal-close {
@@ -1152,18 +1143,14 @@ textarea[type="text"]::-webkit-input-placeholder {
 /* range */
 
 .filter-item {
+  width: 260px;
   margin: 0;
   padding: 0;
   border: none;
-
-  /* Для демонстрации */
-  width: 260px;
-  margin: 50px auto;
-
 }
 
+
 .range-filter {
-  width: 260px;
   margin-top: 49px;
 }
 
