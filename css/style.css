@@ -912,12 +912,10 @@ table {
 /* modal */
 
 .modal-feedback {
-
   position: fixed;
   z-index: 150;
-  top: auto;
-  bottom: auto;
-  padding: 63px 99px 84px 100px;
+  bottom: 18%;
+  padding: 20px 99px 84px 100px;
   background: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   left: 50%;
@@ -925,6 +923,7 @@ table {
 }
 
 .modal-description {
+  width: 311px;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
@@ -937,7 +936,7 @@ table {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 
@@ -988,7 +987,7 @@ textarea[type="text"]::-webkit-input-placeholder {
   width: 744px;
   height: 101px;
   padding-left: 16px;
-  padding-top: 16px;
+  padding-top: 13px;
   margin: 0;
 }
 
@@ -1073,18 +1072,20 @@ textarea[type="text"]::-webkit-input-placeholder {
   right: 85px;
   background-color: transparent;
   border: 0;
+  outline: none;
   cursor: pointer;
-  opacity: 0.3;
+  fill: var(--basic-red);
+  fill-opacity: 0.3;
 }
 
 .modal-close:hover,
 .modal-close:focus {
-  opacity: 1;
+  fill-opacity: 1;
 }
 
 
 .modal-close:active {
-  opacity: 0.1;
+  fill-opacity: 0.1;
 }
 
 
