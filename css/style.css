@@ -653,6 +653,7 @@ table {
   border-top: 2px solid var(--pale-grey);
   border-bottom: 2px solid var(--pale-grey);
   margin: 0;
+  margin-bottom: 78px;
 }
 
 .pic-logo a {
@@ -752,7 +753,6 @@ table {
 /* map */
 
 .map {
-  margin-top: 78px;
   margin-bottom: 52px;
   position: relative;
 }
@@ -1125,8 +1125,9 @@ textarea[type="text"]::-webkit-input-placeholder {
   font-size: 55px;
   line-height: 55px;
   text-align: center;
+  padding-right: 15px;
   margin: 0;
-  padding-top: 72px;
+  padding-top: 71px;
   padding-bottom: 108px;
   margin-bottom: -108px;
   background-color: var(--pale-grey);
@@ -1135,7 +1136,7 @@ textarea[type="text"]::-webkit-input-placeholder {
 
 .page-catalog {
   margin: 0;
-  margin-top: 163px;
+  margin-top: 145px;
   display: flex;
 }
 
@@ -1164,7 +1165,7 @@ textarea[type="text"]::-webkit-input-placeholder {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1278,7 +1279,7 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .filter fieldset:nth-child(2n) {
-  margin-bottom: 46px;
+  margin-bottom: 41px;
 }
 
 .filter ul {
@@ -1309,8 +1310,8 @@ input[type="number"]::-webkit-input-placeholder {
 
 
 .filter-option {
-  margin-top: 14px;
-  padding-bottom: 7px;
+  margin-top: 13px;
+  padding-bottom: 8px;
 }
 
 
@@ -1348,8 +1349,7 @@ input[type="number"]::-webkit-input-placeholder {
 /* checkbox*/
 
 .filter-checkbox {
-  margin-top: 9px;
-  margin-bottom: 14px;
+  margin-top: 13px;
 }
 
 
@@ -1423,7 +1423,7 @@ input[type="number"]::-webkit-input-placeholder {
   height: 50px;
   background: var(--pale-grey);
   border-radius: 3px;
-  margin-top: 30px;
+  margin-top: 45px;
   border: none;
 }
 
@@ -1451,6 +1451,7 @@ input[type="number"]::-webkit-input-placeholder {
 
 .sort-list {
   margin-left: 140px;
+  margin-bottom: 32px;
   display: flex;
 }
 
@@ -1466,7 +1467,7 @@ input[type="number"]::-webkit-input-placeholder {
   display: flex;
   padding-top: 7px;
   margin-left: auto;
-  width: 361px;
+  width: 364px;
 }
 
 .sorting a {
@@ -1576,11 +1577,11 @@ input[type="number"]::-webkit-input-placeholder {
 
 
 .catalog-item-info {
-  display: flex;
-  flex-direction: column;
+  min-height: 231px;
   align-items: center;
   text-align: center;
   background: var(--pale-grey);
+
 }
 
 
@@ -1590,6 +1591,7 @@ input[type="number"]::-webkit-input-placeholder {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top: 27px;
 }
 
 .catalog-item-title h3:hover,
@@ -1603,13 +1605,14 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .catalog-item-desc {
+  width: 255px;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: var(--light-grey);
   margin-top: -6px;
   margin-bottom: 32px;
-  padding-left: 52px;
+  padding-left: 50px;
   padding-right: 53px;
 }
 
@@ -1696,7 +1699,7 @@ input[type="number"]::-webkit-input-placeholder {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 55px;
+  margin-top: 21px;
   margin-bottom: 60px;
   padding-left: 0;
   width: 457px;
@@ -1708,7 +1711,7 @@ input[type="number"]::-webkit-input-placeholder {
   line-height: 18px;
   border-radius: 3px;
   display: inline-block;
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .first-page a {
