@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -17,14 +16,14 @@
       <a class="nav-logo">
         <img src="img/index/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">
       </a>
-        <ul class="nav-items">
-          <li class="nav-item"><a href=""> Студия</a></li>
-          <li class="nav-item"><a href="">Клиенты</a></li>
-          <li class="nav-item"><a href="catalog.html">Магазин</a></li>
-          <li class="nav-item"><a href="">Контакты</a></li>
-        </ul>
+      <ul class="nav-items">
+        <li class="nav-item"><a href=""> Студия</a></li>
+        <li class="nav-item"><a href="">Клиенты</a></li>
+        <li class="nav-item"><a href="catalog.html">Магазин</a></li>
+        <li class="nav-item"><a href="">Контакты</a></li>
+      </ul>
       <ul class="nav-basket">
-          <li class="nav-item basket"><a href="">Корзина</a></li>
+        <li class="nav-item basket"><a href="">Корзина</a></li>
       </ul>
     </div>
   </nav>
@@ -33,37 +32,38 @@
 
 <main>
   <div class="background-slider">
-  <div class="slider-container container">
-  <section class="slider">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-    <div class="slider-controls">
-      <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
-      <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
-      <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+    <div class="slider-container container">
+      <section class="slider">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <b>Долго, дорого,<br> скрупулезно.</b>
+            <p class="p-slide-first">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="visually-hidden slider-item">
+            <b>Любим математику<br>как никто другой</b>
+            <p class="p-slide-second">Никакого креатива, только математические формулы<br>для расчета идеальных
+              пропорций</p>
+            <a class="slider-button" href="#">Узнать больше</a>
+          </li>
+          <li class="visually-hidden slider-item">
+            <b>Только ночь,<br> только хардкор</b>
+            <p class="p-slide-third">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
+              начинается.</p>
+            <a class="slider-button" href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </section>
     </div>
-    <ul class="slider-list">
-      <li class="slider-item">
-        <b>Долго, дорого,<br> скрупулезно.</b>
-        <p class="p-slide-first">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-        <a class="slider-button" href="#">Узнать больше</a>
-      </li>
-      <li class="visually-hidden slider-item">
-        <b>Любим математику<br>как никто другой</b>
-        <p class="p-slide-second">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
-        <a class="slider-button" href="#">Узнать больше</a>
-      </li>
-      <li class="visually-hidden slider-item">
-        <b>Только ночь,<br> только хардкор</b>
-        <p class="p-slide-third">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только
-          начинается.</p>
-        <a class="slider-button" href="#">Узнать больше</a>
-      </li>
-    </ul>
-  </section>
-</div>
   </div>
 
 
@@ -161,7 +161,6 @@
   </div>
 
 
-
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="img-map"></div>
@@ -178,7 +177,6 @@
   </section>
 
 </main>
-
 
 
 <footer>
@@ -257,12 +255,10 @@
       <path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5
        7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0
         0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003
-         1.003 0 0 0 0-1.414L13.328 10.5z"/></svg>
+         1.003 0 0 0 0-1.414L13.328 10.5z"/>
+    </svg>
   </button>
 </section>
-
-
-
 
 
 </body>
