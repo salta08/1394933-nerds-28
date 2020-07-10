@@ -12,7 +12,7 @@
 <header>
   <nav>
     <div class="container">
-      <a class="nav-logo" href="index.html">
+      <a class="nav-logo catalog-nav-logo" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="160" height="65" viewBox="0 0 160 65">
           <path d="M157.936
          49.374c-1.235.161-2.523.271-3.757.377v.056c-2.415 17.364-26.188 20.231-26.779 6.599-.269-6.167 11.593-7.95
@@ -44,12 +44,11 @@
                                  3.653-7.473 10.792-.946 8.373 2.788 12.813 4.908 10.791 1.617-1.631 2.453-6.803 2.676-8.486zm24.086-43.165c-1.784-2.642-8.307.562-12.098 14.332 9.535-4.554
                                   13.326-12.422 12.098-14.332z"/>
         </svg>
-
       </a>
       <ul class="nav-items">
         <li class="nav-item"><a href=""> Студия</a></li>
         <li class="nav-item"><a href="">Клиенты</a></li>
-        <li class="nav-item catalog-store"><a href="catalog.html">Магазин</a></li>
+        <li class="nav-item nav-item-store"><a href="catalog.html">Магазин</a></li>
         <li class="nav-item"><a href="">Контакты</a></li>
       </ul>
       <ul class="nav-basket">
@@ -66,7 +65,7 @@
     <div class="page-catalog">
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-item">
-          <legend class="cost">Стоимость:</legend>
+          <legend>Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -88,7 +87,7 @@
 
         <fieldset>
           <legend>Сетка:</legend>
-          <ul class="grid">
+          <ul>
             <li class="filter-option filter-radio">
               <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive"
                      id="filter-adaptive" checked>
@@ -108,7 +107,7 @@
 
         <fieldset>
           <legend>Особенности:</legend>
-          <ul class="benefits">
+          <ul>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider"
                      checked>
@@ -138,27 +137,27 @@
 
 
       <div class="products-container">
-        <section class="sort-list">
-          <p class="sort">Сортировать:</p>
+        <section class="sort">
+          <p>Сортировать:</p>
           <ul class="sort-items">
-            <li class="sorting sorting-price">
+            <li class="sort-item sort-item-price">
               <a href="">по цене</a>
             </li>
-            <li class="sorting sorting-type">
+            <li class="sort-item sort-item-type">
               <a href="">по типу</a>
             </li>
-            <li class="sorting sorting-name">
+            <li class="sort-item sort-item-name">
               <a href="">по названию</a>
             </li>
-            <li class="button-down">
-              <a class="sort-button" href="">
+            <li class="sort-button-down">
+              <a class="" href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 10L0 0h11"/>
                 </svg>
               </a>
             </li>
-            <li class=" button-up">
-              <a class="sort-button" href="">
+            <li class="sort-button-up">
+              <a class="" href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z"/>
                 </svg>

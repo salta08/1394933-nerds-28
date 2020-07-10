@@ -169,22 +169,6 @@ header .container {
   border-color: var(--basic-red);
 }
 
-.catalog-store {
-  position: relative;
-}
-
-.catalog-store::after {
-  content: "";
-  position: absolute;
-  top: 43px;
-  left: 0;
-  width: 74px;
-  height: 2px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: var(--basic-red);
-}
-
 .nav-basket {
   margin-top: 75px;
   margin-left: 247px;
@@ -813,6 +797,7 @@ table {
 /* modal */
 
 .modal-feedback {
+  display: none;
   position: fixed;
   z-index: 150;
   bottom: 18%;
@@ -984,25 +969,33 @@ textarea[type="text"]::-webkit-input-placeholder {
 
 /*catalog  */
 
-.nav-logo a:hover,
-.nav-logo a:focus {
-  background-color: var(--basic-black);
+
+.catalog-nav-logo:hover,
+.catalog-nav-logo:focus {
+  fill: var(--basic-black);
 }
 
-.nav-logo a:active {
-  background-color: var(--light-grafit);
+.catalog-nav-logo:active {
+  fill: var(--light-grafit);
 }
 
-.nav-item-3::before,
-.nav-item-3::after {
+.nav-item-store {
+  position: relative;
+}
+
+.nav-item-store::after {
   content: "";
   position: absolute;
-  top: 118px;
-  left: 745px;
+  top: 43px;
+  left: 0;
   width: 74px;
   height: 2px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   background-color: var(--basic-red);
 }
+
+
 
 .catalog-title {
   font-weight: 500;
@@ -1018,10 +1011,10 @@ textarea[type="text"]::-webkit-input-placeholder {
 }
 
 .page-catalog {
-  margin: 0;
   margin-top: 145px;
   display: flex;
 }
+
 
 
 /* range */
@@ -1140,7 +1133,7 @@ input[type="number"]::-webkit-input-placeholder {
   width: 260px;
 }
 
-.cost {
+.filter-item legend {
   margin: 0;
   padding: 0;
   padding-top: 19px;
@@ -1321,13 +1314,17 @@ input[type="number"]::-webkit-input-placeholder {
   flex-direction: column;
 }
 
-.sort-list {
+.sort {
   margin-left: 140px;
   margin-bottom: 32px;
   display: flex;
 }
 
-.sort {
+
+
+
+
+.sort p {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -1342,7 +1339,7 @@ input[type="number"]::-webkit-input-placeholder {
   width: 364px;
 }
 
-.sorting a {
+ .sort-item a {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1351,35 +1348,35 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
-.sorting-price a {
+.sort-item-price a {
   color: var(--basic-black);
 }
 
 
-.sorting-type a,
-.sorting-name a {
+.sort-item-type a,
+.sort-item-name a {
   color: var(--basic-black);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
 
-.sorting a:hover,
-.sorting a:focus {
+.sort-item a:hover,
+.sort-item a:focus {
   opacity: 0.6;
 }
 
-.sorting a:active,
-.sorting:active link {
+.sort-item a:active,
+.sort-item:active link {
   opacity: 1;
 }
 
 
-.button-down {
+.sort-button-down {
   margin-left: 22px;
   color: var(--pale-black);
 }
 
-.button-up {
+.sort-button-up {
   margin-left: 18px;
   fill: var(--light-grafit);
   mix-blend-mode: normal;
@@ -1387,15 +1384,19 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
-.sort-button:hover,
-.sort-button:focus {
+.sort-button-down a:hover,
+.sort-button-down a:focus,
+.sort-button-up a:hover,
+.sort-button-up a:focus {
   fill: var(--light-grafit);
   fill-opacity: 1;
 }
 
 
-.sort-button:active,
-.sort-button:active link {
+.sort-button-down a:active,
+.sort-button-down a:active link,
+.sort-button-up a:active,
+.sort-button-up:active link {
   fill: var(--pale-black);
   fill-opacity: 1;
 }
