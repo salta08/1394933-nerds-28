@@ -578,7 +578,7 @@ table {
 
 /* логотипы компаний */
 
-.pic-logo {
+.logo {
   list-style: none;
   display: grid;
   grid-template-columns: 279px 298px 298px 279px;
@@ -588,50 +588,29 @@ table {
   margin-bottom: 78px;
 }
 
-.pic-logo a {
+.logo a {
   opacity: 0.2;
 }
 
-.pic-logo a:hover,
-.pic-logo a:focus {
+.logo a:hover,
+.logo a:focus {
   background-color: var(--basic-white);
   opacity: 1;
 }
 
-.pic-logo a:active {
+.logo a:active {
   opacity: 0.1;
 }
 
 
-.pic-logo-first {
+.logo-html-academy {
   padding-top: 63px;
   padding-bottom: 49px;
   margin-left: -5px;
   position: relative;
 }
 
-.pic-logo-second {
-  padding-top: 46px;
-  padding-bottom: 44px;
-  margin-left: 5px;
-  position: relative;
-}
-
-.pic-logo-third {
-  padding-top: 65px;
-  padding-bottom: 63px;
-  padding-left: 20px;
-  position: relative;
-}
-
-.pic-logo-fourth {
-  padding-top: 52px;
-  padding-bottom: 44px;
-  padding-left: 27px;
-  position: relative;
-}
-
-.pic-logo-first::after {
+.logo-html-academy::after {
   content: "";
   position: absolute;
   top: 89px;
@@ -641,11 +620,18 @@ table {
   background-color: var(--pale-grey);
 }
 
-.pic-logo-first::after {
+.logo-html-academy::after {
   transform: rotate(-90deg);
 }
 
-.pic-logo-second::after {
+.logo-barbershop-borodinski {
+  padding-top: 46px;
+  padding-bottom: 44px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.logo-barbershop-borodinski::after {
   content: "";
   position: absolute;
   top: 89px;
@@ -655,12 +641,18 @@ table {
   background-color: var(--pale-grey);
 }
 
-
-.pic-logo-second::after {
+.logo-barbershop-borodinski::after {
   transform: rotate(-90deg);
 }
 
-.pic-logo-third::after {
+.logo-pink {
+  padding-top: 65px;
+  padding-bottom: 63px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.logo-pink::after {
   content: "";
   position: absolute;
   top: 89px;
@@ -671,9 +663,18 @@ table {
 }
 
 
-.pic-logo-third::after {
+.logo-pink::after {
   transform: rotate(-90deg);
 }
+
+.logo-mishka {
+  padding-top: 52px;
+  padding-bottom: 44px;
+  padding-left: 27px;
+  position: relative;
+}
+
+
 
 
 /* map */
