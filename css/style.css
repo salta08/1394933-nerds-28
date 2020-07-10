@@ -813,7 +813,6 @@ table {
 /* modal */
 
 .modal-feedback {
-  display: none;
   position: fixed;
   z-index: 150;
   bottom: 18%;
@@ -824,75 +823,12 @@ table {
   transform: translateX(-50%);
 }
 
-.modal-description {
+.modal-feedback h3 {
   width: 311px;
   font-weight: bold;
   font-size: 45px;
   line-height: 53px;
   margin-bottom: 37px;
-}
-
-
-.feedback-form label {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  margin-bottom: 10px;
-}
-
-
-.user {
-  font-weight: normal;
-  font-size: 16px;
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  width: 342px;
-  height: 47px;
-  padding: 0;
-}
-
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
-textarea[type="text"]::placeholder {
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
-input[type="text"]::-webkit-input-placeholder,
-input[type="email"]::-webkit-input-placeholder {
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
-textarea[type="text"]::-webkit-input-placeholder {
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
-.name-user, .email-user {
-  padding-left: 16px;
-}
-
-.text-user {
-  width: 744px;
-  height: 101px;
-  padding-left: 16px;
-  padding-top: 13px;
-  margin: 0;
-}
-
-.feedback-form p:nth-child(3) {
-  margin-top: 34px;
 }
 
 .modal-feedback p {
@@ -910,20 +846,16 @@ textarea[type="text"]::-webkit-input-placeholder {
   width: 761px;
 }
 
-.button-send {
-  width: 259px;
-  height: 50px;
-  font-weight: 500;
+.feedback-form p:nth-child(3) {
+  margin-top: 34px;
+}
+
+.feedback-form label {
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  background: var(--basic-red);
-  text-transform: uppercase;
-  color: var(--basic-white);
-  border-radius: 3px;
-  text-align: center;
-  padding: 17px 83px 15px 83px;
-  border: none;
-  margin-top: 44px;
+  margin-bottom: 10px;
 }
 
 .feedback-form input,
@@ -956,7 +888,77 @@ textarea[type="text"]::-webkit-input-placeholder {
   color: var(--extra-red);
 }
 
-.modal-close {
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+textarea[type="text"]::placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+textarea[type="text"]::-webkit-input-placeholder {
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.user {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--dark-grey);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 342px;
+  height: 47px;
+  padding: 0;
+}
+
+.name-user, .email-user {
+  padding-left: 16px;
+}
+
+.text-user {
+  width: 744px;
+  height: 101px;
+  padding-left: 16px;
+  padding-top: 13px;
+  margin: 0;
+}
+
+
+
+.button-send {
+  width: 259px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  background: var(--basic-red);
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border-radius: 3px;
+  text-align: center;
+  padding: 17px 83px 15px 83px;
+  border: none;
+  margin-top: 44px;
+}
+
+
+
+.modal-feedback-close {
   position: absolute;
   top: 78px;
   right: 85px;
@@ -968,14 +970,16 @@ textarea[type="text"]::-webkit-input-placeholder {
   fill-opacity: 0.3;
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-feedback-close:hover,
+.modal-feedback-close:focus {
   fill-opacity: 1;
 }
 
-.modal-close:active {
+.modal-feedback-close:active {
   fill-opacity: 0.1;
 }
+
+
 
 
 /*catalog  */
