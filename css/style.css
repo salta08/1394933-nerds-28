@@ -57,6 +57,7 @@ body {
   background-color: var(--basic-white);
 }
 
+
 a {
   text-decoration: none;
 }
@@ -68,6 +69,7 @@ input, textarea {
 input:hover, textarea:hover {
   outline: none;
 }
+
 
 input:focus, textarea:focus {
   outline: none;
@@ -659,8 +661,6 @@ table {
 }
 
 
-
-
 /* map */
 
 .map {
@@ -924,7 +924,6 @@ textarea[type="text"]::-webkit-input-placeholder {
 }
 
 
-
 .button-send {
   width: 259px;
   height: 50px;
@@ -940,7 +939,6 @@ textarea[type="text"]::-webkit-input-placeholder {
   border: none;
   margin-top: 44px;
 }
-
 
 
 .modal-feedback-close {
@@ -963,8 +961,6 @@ textarea[type="text"]::-webkit-input-placeholder {
 .modal-feedback-close:active {
   fill-opacity: 0.1;
 }
-
-
 
 
 /*catalog  */
@@ -996,7 +992,6 @@ textarea[type="text"]::-webkit-input-placeholder {
 }
 
 
-
 .catalog-title {
   font-weight: 500;
   font-size: 55px;
@@ -1014,7 +1009,6 @@ textarea[type="text"]::-webkit-input-placeholder {
   margin-top: 145px;
   display: flex;
 }
-
 
 
 /* range */
@@ -1321,9 +1315,6 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
-
-
-
 .sort p {
   font-weight: bold;
   font-size: 18px;
@@ -1339,7 +1330,7 @@ input[type="number"]::-webkit-input-placeholder {
   width: 364px;
 }
 
- .sort-item a {
+.sort-item a {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -1421,9 +1412,11 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .card-item {
+      min-height: 620px;
   width: 360px;
   margin-right: 40px;
   margin-bottom: 30px;
+  position: relative;
   list-style: none;
 }
 
@@ -1440,15 +1433,19 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
+
 .card-info {
+  width: 100%;
   z-index: 100;
-  max-height: 620px;
-  min-height: 231px;
   align-items: center;
   text-align: center;
   background: var(--pale-grey);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  overflow: scroll;
 }
-
 
 .card-info h3 {
   font-weight: bold;
@@ -1537,16 +1534,7 @@ input[type="number"]::-webkit-input-placeholder {
   display: none;
 }
 
-.card-item {
-  position: relative;
-}
 
-.card-info {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 
 
 /* pagination */
