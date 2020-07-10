@@ -1561,7 +1561,7 @@ input[type="number"]::-webkit-input-placeholder {
   width: 457px;
 }
 
-.pagination a {
+.pagination-item a {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1570,21 +1570,21 @@ input[type="number"]::-webkit-input-placeholder {
   margin-right: 12px;
 }
 
-.first-page a {
+.pagination-first-page a {
   background: rgba(0, 0, 0, 0.0001);
   border: 3px solid var(--white-grey);
   color: var(--basic-black);
   padding: 14px 17px 12px 17px;
 }
 
-.second-page a,
-.third-page a {
+.pagination-second-page a,
+.pagination-third-page a {
   color: var(--basic-black);
   background: var(--pale-grey);
   padding: 17px 20px 15px 20px;
 }
 
-.pagination-item-next a {
+.pagination-next-page a {
   text-transform: uppercase;
   padding: 17px 77px 15px 78px;
   color: var(--basic-black);
@@ -1592,18 +1592,18 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 
-.pagination a:hover,
-.pagination a:focus {
+.pagination-item a:hover,
+.pagination-item a:focus {
   background: var(--middle-grey);
 }
 
-.pagination a:active {
+.pagination-item a:active {
   background: var(--extra-grey);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination a:active link {
+.pagination-item a:active link {
   background: rgba(0, 0, 0, 0.0001);
   border: 3px solid var(--white-grey);
   color: var(--basic-black);
