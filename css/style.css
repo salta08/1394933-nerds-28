@@ -712,7 +712,7 @@ table {
   padding-left: 50px;
 }
 
-.map-title {
+.map-contacts-title {
   width: 193px;
   font-weight: bold;
   font-size: 18px;
@@ -722,7 +722,7 @@ table {
   margin-bottom: 5px;
 }
 
-.address, .tel {
+.map-contacts-address, .map-contacts-tel {
   width: 230px;
   font-weight: normal;
   font-size: 16px;
@@ -731,7 +731,7 @@ table {
   text-align: start;
 }
 
-.tel {
+.map-contacts-tel {
   margin-top: 2px;
   margin-bottom: 37px;
 }
@@ -786,11 +786,11 @@ table {
   fill-opacity: 0.3;
 }
 
-.social {
+.social-text {
   margin-left: 129px;
 }
 
-.social p {
+.social-text p {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
@@ -801,7 +801,7 @@ table {
 }
 
 
-.social span {
+.social-text span {
   width: 373px;
   font-weight: normal;
   font-size: 16px;
