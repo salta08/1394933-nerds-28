@@ -231,6 +231,7 @@ input[type="radio"].visually-hidden {
 .slider-controls label {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   margin-right: 17px;
@@ -1528,6 +1529,7 @@ input[type="number"]::-webkit-input-placeholder {
   line-height: 18px;
   border-radius: 3px;
   display: inline-block;
+  vertical-align: top;
   margin-right: 12px;
 }
 
