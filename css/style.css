@@ -1097,9 +1097,10 @@ textarea[type="text"]::-webkit-input-placeholder {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
   margin: 0;
-  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input[type="number"]::placeholder {
