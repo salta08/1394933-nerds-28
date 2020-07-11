@@ -61,26 +61,6 @@ a {
   text-decoration: none;
 }
 
-input,
-textarea {
-  outline: none;
-}
-
-input:hover,
-textarea:hover {
-  outline: none;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
-input:active,
-textarea:active {
-  outline: none;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -795,7 +775,7 @@ input[type="radio"].visually-hidden {
 /* modal */
 
 .modal-feedback {
-  display: none;
+
   position: fixed;
   z-index: 150;
   bottom: 18%;
@@ -841,32 +821,35 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
 }
 
-.feedback-form input,
-.feedback-form textarea {
-  background: var(--basic-white);
-  border: 2px solid var(--border-grey);
-  border-radius: 3px;
+.user {
+  font-weight: normal;
+  font-size: 16px;
   color: var(--dark-grey);
   mix-blend-mode: normal;
   opacity: 0.5;
+  width: 342px;
+  height: 47px;
+  padding: 0;
+  background: var(--basic-white);
+  border: 2px solid var(--border-grey);
+  border-radius: 3px;
 }
 
-.feedback-form input:hover,
-.feedback-form textarea:hover {
+.user:hover {
   border: 2px solid var(--hover-grey);
   color: var(--dark-grey);
   mix-blend-mode: normal;
   opacity: 0.5;
+  outline: none;
 }
 
-.feedback-form input:focus,
-.feedback-form textarea:focus {
+.user:focus {
   border: 2px solid var(--basic-black);
   color: var(--dark-grey);
+  outline: none;
 }
 
-.feedback-form input:invalid,
-.feedback-form textarea:invalid {
+.user:invalid {
   border: 2px solid var(--extra-red);
   color: var(--extra-red);
 }
@@ -895,17 +878,6 @@ textarea[type="text"]::-webkit-input-placeholder {
   color: var(--dark-grey);
   mix-blend-mode: normal;
   opacity: 0.5;
-}
-
-.user {
-  font-weight: normal;
-  font-size: 16px;
-  color: var(--dark-grey);
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  width: 342px;
-  height: 47px;
-  padding: 0;
 }
 
 .name-user,
