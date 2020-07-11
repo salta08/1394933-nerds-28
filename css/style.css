@@ -99,11 +99,11 @@ input[type="radio"].visually-hidden {
 
 /* navigation */
 
-header {
+.header {
   background-color: var(--pale-grey);
 }
 
-header .container {
+.header .container {
   max-width: 1160px;
   display: flex;
 }
@@ -1421,7 +1421,7 @@ input[type="number"]::-webkit-input-placeholder {
 .card-info p {
   display: block;
   max-height: 384px;
-  overflow: auto;
+  overflow-y: auto;
 }
 
 .card-info h3 {
