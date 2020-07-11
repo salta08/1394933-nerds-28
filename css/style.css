@@ -1009,9 +1009,6 @@ textarea[type="text"]::-webkit-input-placeholder {
 
 .filter-item {
   width: 260px;
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .range-filter {
@@ -1197,6 +1194,29 @@ input[type="number"]::-webkit-input-placeholder {
   opacity: 0.4;
 }
 
+.filter-input-radio:disabled+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/catalog/radio-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.filter-input-radio:disabled+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/catalog/radio-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
 
 /* checkbox*/
 
@@ -1226,6 +1246,30 @@ input[type="number"]::-webkit-input-placeholder {
   background-image: url("../img/catalog/checkbox-on.svg");
   background-repeat: no-repeat;
   opacity: 0.4;
+}
+
+.filter-input-checkbox:disabled+label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/catalog/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.filter-input-checkbox:disabled+label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/catalog/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
 }
 
 .filter-option label:hover:before {
