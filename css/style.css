@@ -775,7 +775,7 @@ input[type="radio"].visually-hidden {
 /* modal */
 
 .modal-feedback {
-
+  display: none;
   position: fixed;
   z-index: 150;
   bottom: 18%;
@@ -1244,6 +1244,10 @@ input[type="number"]::-webkit-input-placeholder {
   opacity: 0.1;
 }
 
+.filter-option input:focus + label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .filter-option label:hover:before {
   opacity: 1;
 }
@@ -1359,7 +1363,7 @@ input[type="number"]::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.sort-button-down {
+.nav-logo-down {
   margin-left: 22px;
   color: var(--pale-black);
 }
@@ -1519,7 +1523,7 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .card:hover .card-img-product {
-  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25)
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .card .card-info {
@@ -1586,3 +1590,5 @@ input[type="number"]::-webkit-input-placeholder {
   border: 3px solid var(--white-grey);
   color: var(--basic-black);
 }
+
+
