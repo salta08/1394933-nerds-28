@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <script src="https://api-maps.yandex.ru/2.1/?0.8/?key=AKgqHEkBAAAA-WzMYwIAeAeamm8ETZZZpdfp2R07eIuGyX4AAAAAAAAAAACjUCDoHIHZJ2pcl5mSL1zWVp2Myw==&lang=ru_RU" type="text/javascript">
+  </script>
   <title>Главная страница Нёрдс</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -146,6 +148,9 @@
       </ul>
     </section>
   </div>
+
+
+  <div id="interactive-map" style="width: 1440px; height: 416px"></div>
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="img-map"></div>
@@ -160,6 +165,13 @@
       </div>
     </div>
   </section>
+
+
+
+
+
+
+
 </main>
 <footer>
   <div class="container">
@@ -211,34 +223,140 @@
     </div>
   </div>
 </footer>
-<section class="modal-feedback">
-  <h2 class="visually-hidden">Форма обратной связи</h2>
-  <h3>Напишите нам</h3>
-  <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label for="feedback-form-name">Ваше имя:</label>
-      <input class="user name-user" id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
-    </p>
-    <p>
-      <label for="feedback-form-email">Ваш email:</label>
-      <input class="user email-user" id="feedback-form-email" type="email" name="email" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="feedback-form-text">Текст письма:</label>
-      <textarea class="user text-user" id="feedback-form-text" name="text"
-                placeholder="В свободной форме"></textarea>
-    </p>
-    <button class="button-send" type="submit">Отправить</button>
-  </form>
-  <button class="modal-feedback-close" type="button" aria-label="Закрыть">
-    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-      <path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5
+
+
+<div class="modal-container">
+  <section class="modal-feedback modal-show modal-error">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <h3>Напишите нам</h3>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="feedback-form-name">Ваше имя:</label>
+        <input class="user name-user" id="feedback-form-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="feedback-form-email">Ваш email:</label>
+        <input class="user email-user" id="feedback-form-email" type="email" name="email"
+               placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="feedback-form-text">Текст письма:</label>
+        <textarea class="user text-user" id="feedback-form-text" name="text"
+                  placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button-send" type="submit">Отправить</button>
+    </form>
+    <button class="modal-feedback-close" type="button" aria-label="Закрыть">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+        <path d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5
          7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0
           0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003
            1.003 0 0 0 0-1.414L13.328 10.5z"/>
-    </svg>
-  </button>
-</section>
+      </svg>
+    </button>
+  </section>
+</div>
+
+
+
+
+<!-- map -->
+
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init(){
+    let map = new ymaps.Map("interactive-map",  {
+      center: [59.938635, 30.323118],
+      zoom: 18
+    });
+    let placemark = new ymaps.Placemark([59.938635, 30.323118], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: "img/index/map-marker.png",
+      iconImageOffset: [-50, -170],
+      iconImageSize: [200, 160]});
+    map.geoObjects.add(placemark)
+  }
+
+</script>
+
+
+
+
+
+<script>
+  let modalLink = document.querySelector(".button-write");
+  let modalPopup = document.querySelector(".modal-feedback");
+  let modalClose = modalPopup.querySelector(".modal-feedback-close");
+  let modalForm = modalPopup.querySelector(".feedback-form");
+  let modalName = modalPopup.querySelector(".name-user");
+  let modalLogin = modalPopup.querySelector(".email-user");
+  let modalText = modalPopup.querySelector(".text-user");
+
+  let isStorageSupport = true;
+  let storage = "";
+
+  try {
+    storage = localStorage.getItem("name");
+  } catch (err) {
+    isStorageSupport = false;
+  }
+
+
+  modalLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalPopup.classList.add("modal-show");
+
+    if (storage) {
+      modalName.value = storage;
+      modalLogin.focus();
+    } else {
+      modalName.focus();
+    }
+  });
+
+
+
+
+  modalClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalPopup.classList.remove("modal-show");
+    modalPopup.classList.remove("modal-error");
+  });
+
+  modalForm.addEventListener("submit", function (evt) {
+  if (!modalName.value || !modalLogin.value || !modalText.value) {
+    evt.preventDefault();
+    modalPopup.classList.remove("modal-error");
+    modalPopup.offsetWidth = modalPopup.offsetWidth;
+    modalPopup.classList.add("modal-error");
+  } else {
+  if (isStorageSupport) {
+    localStorage.setItem("name", modalName.value);
+  }
+  }
+  });
+
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (modalPopup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        modalPopup.classList.remove("modal-show");
+        modalPopup.classList.remove("modal-error");
+      }
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
 
