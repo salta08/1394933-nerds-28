@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <script src="https://api-maps.yandex.ru/2.1/?0.8/?key=AKgqHEkBAAAA-WzMYwIAeAeamm8ETZZZpdfp2R07eIuGyX4AAAAAAAAAAACjUCDoHIHZJ2pcl5mSL1zWVp2Myw==&lang=ru_RU" type="text/javascript">
+  </script>
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -263,20 +265,22 @@
       </div>
     </div>
   </div>
-  <section class="map">
-    <h2 class="visually-hidden">Как до нас добраться</h2>
-    <div class="img-map"></div>
-    <div class="container">
-      <div class="map-contacts-container">
-        <section class="map-contacts">
-          <p class="map-contacts-title">Nёrds design studio</p>
-          <p class="map-contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
-          <p><a class="map-contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
-          <a class="button-write" href="">Напишите нам</a>
-        </section>
+  <div id="main-map" style="width:1440px; height:416px">
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="img-map"></div>
+      <div class="container">
+        <div class="map-contacts-container">
+          <section class="map-contacts">
+            <p class="map-contacts-title">Nёrds design studio</p>
+            <p class="map-contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p><a class="map-contacts-tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+            <a class="button-write" href="">Напишите нам</a>
+          </section>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </main>
 <footer>
   <div class="container">
@@ -331,7 +335,7 @@
 
 
 <div class="modal-container">
-  <section class="modal-feedback modal-show modal-error">
+  <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h3>Напишите нам</h3>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -363,6 +367,25 @@
 </div>
 
 
+
+<!-- map -->
+
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init(){
+    let map = new ymaps.Map("main-map",  {
+      center: [59.938635, 30.323118],
+      zoom: 18
+    });
+    let placemark = new ymaps.Placemark([59.938635, 30.323118], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: "img/index/map-marker.png",
+      iconImageOffset: [-50, -170],
+      iconImageSize: [200, 160]});
+    map.geoObjects.add(placemark)
+  }
+
+</script>
 
 
 

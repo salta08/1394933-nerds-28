@@ -642,23 +642,28 @@ input[type="radio"].visually-hidden {
 
 /* map */
 
-.map {
-  margin-bottom: 52px;
+.main-map {
   position: relative;
+  z-index: 400;
+}
+
+.map {
+  position: absolute;
 }
 
 .img-map {
+  width: 1440px;
   height: 416px;
   background-image: url("../img/index/img-map.png");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 200;
 }
 
 .map-contacts-container {
   position: absolute;
-  height: 320px;
+  height: 308px;
   top: 55px;
-  z-index: 9;
 }
 
 .map-contacts {
@@ -668,6 +673,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: start;
+  z-index: 300;
 }
 
 .map-contacts p {
@@ -716,6 +722,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  margin-top: 50px;
   margin-bottom: 68px;
 }
 
@@ -783,10 +790,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
+  display: none;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   background: var(--basic-white);
   padding: 20px 99px 84px 100px;
-  display: none;
   height: inherit;
 }
 

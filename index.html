@@ -150,7 +150,7 @@
   </div>
 
 
-  <div id="interactive-map" style="width: 1440px; height: 416px"></div>
+  <div id="main-map" style="width:1440px; height:416px">
   <section class="map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <div class="img-map"></div>
@@ -165,7 +165,7 @@
       </div>
     </div>
   </section>
-
+  </div>
 
 
 
@@ -224,9 +224,8 @@
   </div>
 </footer>
 
-
 <div class="modal-container">
-  <section class="modal-feedback modal-show modal-error">
+  <section class="modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h3>Напишите нам</h3>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -265,7 +264,7 @@
 <script type="text/javascript">
   ymaps.ready(init);
   function init(){
-    let map = new ymaps.Map("interactive-map",  {
+    let map = new ymaps.Map("main-map",  {
       center: [59.938635, 30.323118],
       zoom: 18
     });
@@ -281,7 +280,7 @@
 
 
 
-
+<!-- modal  -->
 
 <script>
   let modalLink = document.querySelector(".button-write");
@@ -291,6 +290,7 @@
   let modalName = modalPopup.querySelector(".name-user");
   let modalLogin = modalPopup.querySelector(".email-user");
   let modalText = modalPopup.querySelector(".text-user");
+  let modalWrapper = document.querySelector(".modal-container")
 
   let isStorageSupport = true;
   let storage = "";
