@@ -5,7 +5,6 @@ let modalForm = modalPopup.querySelector(".feedback-form");
 let modalName = modalPopup.querySelector(".name-user");
 let modalLogin = modalPopup.querySelector(".email-user");
 let modalText = modalPopup.querySelector(".text-user");
-let modalWrapper = document.querySelector(".modal-container")
 
 let isStorageSupport = true;
 let storage = "";
