@@ -1235,6 +1235,22 @@ input[type="number"]::-webkit-input-placeholder {
   opacity: .1
 }
 
+.filter-input-checkbox:focus + label {
+opacity: 1;
+}
+
+.filter-input-checkbox:disabled + label {
+opacity: 0.3;
+}
+
+.filter-input-radio:focus + label{
+  opacity: 1;
+}
+
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
+}
+
 .filter-option input:focus + label::before {
   outline: -webkit-focus-ring-color auto 1px
 }
@@ -1258,15 +1274,6 @@ input[type="number"]::-webkit-input-placeholder {
   cursor: pointer;
   user-select: none;
   padding-left: 36px
-}
-
-.filter-option label:hover, .filter-option label:focus {
-  color: var(--light-black)
-}
-
-.filter-option label:disabled {
-  mix-blend-mode: normal;
-  opacity: .3
 }
 
 .button-show {
@@ -1494,6 +1501,7 @@ input[type="number"]::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: start
 }
+
 
 .card:hover .card-img-product {
   box-shadow: 0 6px 15px rgba(0, 1, 1, .25)
