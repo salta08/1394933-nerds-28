@@ -609,7 +609,6 @@ a {
   position: relative
 }
 
-
 .map-iframe {
   position: relative;
   z-index: 200;
@@ -1237,14 +1236,14 @@ input[type="number"]::-webkit-input-placeholder {
 }
 
 .filter-input-checkbox:focus + label {
-opacity: 1;
+  opacity: 1;
 }
 
 .filter-input-checkbox:disabled + label {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
-.filter-input-radio:focus + label{
+.filter-input-radio:focus + label {
   opacity: 1;
 }
 
@@ -1508,8 +1507,6 @@ opacity: 0.3;
   flex-direction: column;
   justify-content: start;
 }
-
-
 
 .card:hover .card-img-product {
   box-shadow: 0 6px 15px rgba(0, 1, 1, .25)

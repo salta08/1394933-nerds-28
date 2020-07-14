@@ -1,10 +1,10 @@
 let modalLink = document.querySelector(".button-write");
-let modalPopup = document.querySelector(".modal-feedback");
-let modalClose = modalPopup.querySelector(".modal-feedback-close");
-let modalForm = modalPopup.querySelector(".feedback-form");
-let modalName = modalPopup.querySelector(".name-user");
-let modalLogin = modalPopup.querySelector(".email-user");
-let modalText = modalPopup.querySelector(".text-user");
+let popup = document.querySelector(".modal-feedback");
+let modalClose = popup.querySelector(".modal-feedback-close");
+let modalForm = popup.querySelector(".feedback-form");
+let modalName = popup.querySelector(".name-user");
+let modalLogin = popup.querySelector(".email-user");
+let modalText = popup.querySelector(".text-user");
 
 let isStorageSupport = true;
 let storage = "";
@@ -18,7 +18,7 @@ try {
 
 modalLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalPopup.classList.add("modal-show");
+    popup.classList.add("modal-show");
 
     if (storage) {
         modalName.value = storage;
@@ -31,16 +31,16 @@ modalLink.addEventListener("click", function (evt) {
 
 modalClose.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalPopup.classList.remove("modal-show");
-    modalPopup.classList.remove("modal-error");
+    popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
 });
 
 modalForm.addEventListener("submit", function (evt) {
     if (!modalName.value || !modalLogin.value || !modalText.value) {
         evt.preventDefault();
-        modalPopup.classList.remove("modal-error");
-        modalPopup.offsetWidth = modalPopup.offsetWidth;
-        modalPopup.classList.add("modal-error");
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
     } else {
         if (isStorageSupport) {
             localStorage.setItem("name", modalName.value);
@@ -51,10 +51,10 @@ modalForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-        if (modalPopup.classList.contains("modal-show")) {
+        if (popup.classList.contains("modal-show")) {
             evt.preventDefault();
-            modalPopup.classList.remove("modal-show");
-            modalPopup.classList.remove("modal-error");
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
         }
     }
 });
