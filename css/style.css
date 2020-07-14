@@ -1502,7 +1502,7 @@ input[type="number"]::-webkit-input-placeholder {
   justify-content: start
 }
 
-.card:focus .card-info {
+.card:focus-within .card-info {
   display: flex;
   flex-direction: column;
   justify-content: start;
