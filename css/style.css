@@ -609,14 +609,15 @@ a {
   position: relative
 }
 
-.map-container {
+
+.map-iframe {
   position: relative;
-  z-index: 400;
-  margin: 0 auto
+  z-index: 200;
+  border: none;
 }
 
 .map {
-  position: absolute
+  position: absolute;
 }
 
 .img-map {
@@ -625,7 +626,7 @@ a {
   background-image: url(../img/index/img-map.png);
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 200
+  z-index: 100;
 }
 
 .map-contacts-container {
@@ -641,7 +642,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: start;
-  z-index: 300
+  z-index: 150;
 }
 
 .map-contacts p {
@@ -1502,13 +1503,20 @@ opacity: 0.3;
   justify-content: start
 }
 
+.card:focus .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+
 
 .card:hover .card-img-product {
   box-shadow: 0 6px 15px rgba(0, 1, 1, .25)
 }
 
 .card .card-info {
-  display: none
+  display: none;
 }
 
 .pagination-items {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Каталог товаров</title>
@@ -115,7 +115,7 @@
             </li>
             <li class="filter-option filter-checkbox">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="benefits-blocks"
-                     id="filter-benefits-blocks" disabled>
+                     id="filter-benefits-blocks">
               <label for="filter-benefits-blocks">Блок преимуществ</label>
             </li>
             <li class="filter-option filter-checkbox">
@@ -282,9 +282,9 @@
       </div>
     </div>
   </div>
-  <div id="main-map" class="map-container" style="width:1440px; height:416px">
+  <section>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
     <section class="map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
       <div class="img-map"></div>
       <div class="container">
         <div class="map-contacts-container">
@@ -297,7 +297,11 @@
         </div>
       </div>
     </section>
-  </div>
+      <iframe class="map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003035!2d30.320858716011124!3d59.93871916905429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1594726724976!5m2!1sru!2sru"
+              width="1440" height="416" allowfullscreen title="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">>
+      </iframe>
+  </section>
 </main>
 <footer>
   <div class="container">
@@ -380,11 +384,7 @@
     </button>
   </section>
 </div>
-<script
-    src="https://api-maps.yandex.ru/2.1/?0.8/?key=AKgqHEkBAAAA-WzMYwIAeAeamm8ETZZZpdfp2R07eIuGyX4AAAAAAAAAAACjUCDoHIHZJ2pcl5mSL1zWVp2Myw==&lang=ru_RU">
-</script>
-<script src="js/min-map.js"></script>
-<script src="js/min-modalpopup.js"></script>
+<script src="js/modalpopup.js"></script>
 </body>
 </html>
 
